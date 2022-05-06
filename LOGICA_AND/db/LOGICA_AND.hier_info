@@ -1,0 +1,11 @@
+|LOGICA_AND
+i_A => w_F.IN0
+i_B => w_F.IN1
+i_C => w_F.IN1
+i_C => w_G.IN0
+i_D => w_G.IN1
+i_D => w_G.IN1
+i_E => ~NO_FANOUT~
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
