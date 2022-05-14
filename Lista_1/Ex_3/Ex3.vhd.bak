@@ -1,0 +1,19 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity Ex3 is
+	Port (
+		i_A 	: in 	STD_LOGIC;
+		i_B 	: in 	STD_LOGIC;
+		i_C 	: in 	STD_LOGIC;
+		o_S 	: out STD_LOGIC;
+		o_Crr : out STD_LOGIC
+	);
+end Ex2;
+
+architecture Behavioral of Ex2 is
+begin
+
+end Behavioral;

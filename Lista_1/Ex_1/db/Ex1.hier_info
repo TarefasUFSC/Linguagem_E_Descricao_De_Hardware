@@ -1,0 +1,13 @@
+|Ex1
+i_A => w_E.IN0
+i_A => w_G.IN0
+i_B => w_G.IN1
+i_B => w_E.IN1
+i_C => w_F.IN0
+i_C => w_G.IN1
+i_D => w_F.IN1
+i_D => o_Sb.IN1
+o_Sa <= o_Sa.DB_MAX_OUTPUT_PORT_TYPE
+o_Sb <= o_Sb.DB_MAX_OUTPUT_PORT_TYPE
+
+
