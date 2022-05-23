@@ -1,0 +1,68 @@
+# Compile of Ex2.vhd was successful.
+vsim -voptargs=+acc work.ex2
+# vsim -voptargs=+acc work.ex2 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.ex2(behavioral)
+wave create -driver freeze -pattern clock -initialvalue U -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/ex2/i_A
+wave create -driver freeze -pattern clock -initialvalue U -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/ex2/i_B
+wave create -driver freeze -pattern clock -initialvalue U -period 400ps -dutycycle 50 -starttime 0ns -endtime 1000ns sim:/ex2/i_C
+add wave -position insertpoint  \
+sim:/ex2/o_S
+add wave -position insertpoint  \
+sim:/ex2/o_Crr
+run
+run
+run
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 400ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/ex2/i_C
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/ex2/i_B
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 1000ns Edit:/ex2/i_A
+run
+# 
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_A "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_B "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_C "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+add wave -position insertpoint  \
+sim:/ex2/o_S
+add wave -position insertpoint  \
+sim:/ex2/o_Crr
+# Break key hit 
+run
+add wave -position 2 -format Logic -height 17 -editable 2 Edit:/ex2/i_C
+add wave -position insertpoint  \
+sim:/ex2/w_S1
+add wave -position insertpoint  \
+sim:/ex2/w_C1
+add wave -position insertpoint  \
+sim:/ex2/w_C2
+run
+# 
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_A "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_B "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+# Internal Error: In tclprim_ApplyStimulus for /ex2/i_C "Time value must be greater than "now": 1000000 ps
+# ** Error: (vsim-4004) The -cancel option requires a time period argument.
+# Usage: force [-deposit | -drive | -freeze] [-cancel <period>] [-repeat <period>] <item_name> <value> [<time>] [, <value> <time> ...]"
+force -freeze sim:/ex2/o_S 1 0, 0 {500 ps} -r 1000
+run
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 100ns -dutycycle 50 -starttime 0ns -endtime 10000ns Edit:/ex2/i_A
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 200ns -dutycycle 50 -starttime 0ns -endtime 10000ns Edit:/ex2/i_B
+wave modify -driver freeze -pattern clock -initialvalue 0 -period 400ns -dutycycle 50 -starttime 0ns -endtime 10000ns Edit:/ex2/i_C
+add wave -position insertpoint  \
+sim:/ex2/o_S
+run
+run
+wave editwrite -file E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/wave.do

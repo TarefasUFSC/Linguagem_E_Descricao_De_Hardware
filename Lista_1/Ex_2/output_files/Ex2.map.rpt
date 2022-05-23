@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Ex2
-Sat May 14 14:38:23 2022
+Fri May 20 11:18:22 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat May 14 14:38:23 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri May 20 11:18:22 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; Ex2                                         ;
 ; Top-level Entity Name              ; Ex2                                         ;
@@ -250,7 +250,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -260,13 +260,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sat May 14 14:37:59 2022
+    Info: Processing started: Fri May 20 11:17:52 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Ex2 -c Ex2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file ex2.vhd
     Info (12022): Found design unit 1: Ex2-Behavioral File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/Ex2.vhd Line: 16
     Info (12023): Found entity 1: Ex2 File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/Ex2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file tb_ex2.vhd
+    Info (12022): Found design unit 1: TB_Ex2-Behavioral File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/TB_Ex2.vhd Line: 10
+    Info (12023): Found entity 1: TB_Ex2 File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/TB_Ex2.vhd Line: 6
 Info (12127): Elaborating entity "Ex2" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -276,9 +279,9 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21059): Implemented 2 output pins
     Info (21061): Implemented 2 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4803 megabytes
-    Info: Processing ended: Sat May 14 14:38:23 2022
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:01:00
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Fri May 20 11:18:22 2022
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:01:06
 
 

@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/Ex2.vhd
+source_file = 1, E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_2/TB_Ex2.vhd
 source_file = 1, e:/programfiles/intelfpga_lite/21.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, e:/programfiles/intelfpga_lite/21.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, e:/programfiles/intelfpga_lite/21.1/quartus/libraries/vhdl/ieee/timing_b.vhd

@@ -1,0 +1,11 @@
+E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_1/Ex1-a.vhd {1 {vcom -work work -2002 -explicit E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Lista_1/Ex_1/Ex1-a.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity Ex1
+-- Compiling architecture Behavioral of Ex1
+
+} {} {}}
