@@ -1,0 +1,26 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+entity FLIP_FLOP is
+	Port(
+		i_RST : in std_logic;
+		i_CLK : in std_logic;
+		i_DATA: in std_logic;
+		o_DATA: out std_logic
+	);
+end FLIP_FLOP;
+
+architecture behavioral of FLIP_FLOP is
+begin
+	flipflop_sincrono: process(i_CLK)
+	begin
+		IF rising_edge(i_CLK) THEN
+			IF (i_RST == '1') THEN
+				o_DATA <= '0';
+			ELSE
+				o_DATA <= i_DATA;
+			end if;
+		end if;
+	end process flipflop_sincrono;
+end behavioral;
