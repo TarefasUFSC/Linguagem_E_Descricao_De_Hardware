@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity REGISTRADOR is
+	Port(
+		i_RST : in std_logic;
+		i_CLK : in std_logic;
+		
+		i_LOAD : in std_logic;
+		i_DATA: in std_logic_vector(15 downto 0);
+		o_DATA: out std_logic_vector(15 downto 0)
+		
+	);
+end REGISTRADOR;
+
+architecture behavioral of REGISTRADOR is
+begin
+--	reg_sincrono: process(i_CLK)
+--	begin
+--		if (rising_edge(i_CLK)) then
+--			if (I_RST = '1') then
+--				o_DATA <= "0000000000000000"; -- (others => '0')
+--			else
+--				if (i_LOAD = '1') then
+--					o_DATA <= x"AA55";
+--				else
+--					o_DATA <= i_DATA;
+--				end if;
+--			end if;
+--		end if;
+--	end process reg_sincrono;
+
+	reg_assincrono: process(i_CLK,i_RST,i_LOAD)
+	begin
+	
+			if (I_RST = '1') then
+				o_DATA <= "0000000000000000"; -- (others => '0')
+			else
+				if (i_LOAD = '1') then
+					o_DATA <= x"AA55";
+				else
+					if (rising_edge(i_CLK)) then
+						o_DATA <= i_DATA;
+					end if;
+				end if;
+			end if;
+	end process reg_assincrono;
+end behavioral;

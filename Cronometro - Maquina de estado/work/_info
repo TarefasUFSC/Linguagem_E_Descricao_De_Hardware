@@ -1,0 +1,83 @@
+m255
+K3
+13
+cModel Technology
+dE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Lista_1\Ex_2
+Ecronometro
+Z0 w1656037496
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado
+Z6 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/CRONOMETRO.vhd
+Z7 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/CRONOMETRO.vhd
+l0
+L6
+V>bICa1mh4NVG_nGk6f4GV0
+!s100 cYmSLdT6:QA4k8Bg04m<f3
+Z8 OV;C;10.1d;51
+32
+!i10b 1
+Z9 !s108 1656037504.502000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/CRONOMETRO.vhd|
+Z11 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/CRONOMETRO.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+Abehavioral
+R1
+R2
+R3
+R4
+Z14 DEx4 work 10 cronometro 0 22 >bICa1mh4NVG_nGk6f4GV0
+l27
+L18
+VX83ZU@X2;iD`AdN45_7oY0
+!s100 hC>@?Zgf3PZh71Of:=_QZ1
+R8
+32
+!i10b 1
+R9
+R10
+R11
+R12
+R13
+Etb_cronometro
+Z15 w1656037397
+R1
+R2
+R3
+R4
+R5
+Z16 8E:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd
+Z17 FE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd
+l0
+L6
+V9=VlD9aEJ=_7cA:jGQA=23
+R8
+32
+Z18 !s108 1656037504.301000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd|
+Z20 !s107 E:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd|
+R12
+R13
+!s100 [gj1cHVdjc?R>z_28K7PY2
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 13 tb_cronometro 0 22 9=VlD9aEJ=_7cA:jGQA=23
+l32
+L10
+V7kac8M9BM<2VI<_m?5?7i1
+!s100 MZN]=ZZHoh=6_`^f85c512
+R8
+32
+R18
+R19
+R20
+R12
+R13
+!i10b 1
