@@ -1,5 +1,5 @@
 Flow report for RAM
-Thu Jun 30 22:44:12 2022
+Fri Jul  1 09:20:25 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jun 30 22:44:12 2022       ;
+; Flow Status                        ; Successful - Fri Jul  1 09:20:25 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; RAM                                         ;
 ; Top-level Entity Name              ; RAM                                         ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2                                           ;
-;     Total combinational functions  ; 2                                           ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 48                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 192                                         ;
+; Total memory bits                  ; 65,536                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 ; UFM blocks                         ; 0                                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/30/2022 22:44:03 ;
+; Start date & time ; 07/01/2022 09:20:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RAM                 ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 136935936943681.165663984321820        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 136935936943681.165667801318628        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -88,6 +88,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --                                ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; MEMORIA_INTEL_inst.vhd                 ; --            ; --          ; --                                ;
+; MISC_FILE                           ; MEMORIA_INTEL.cmp                      ; --            ; --          ; --                                ;
+; MISC_FILE                           ; MEMORIA_INTEL_syn.v                    ; --            ; --          ; --                                ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
 ; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top                               ;
@@ -100,8 +103,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4812 MB             ; 00:00:22                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:22                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4805 MB             ; 00:00:32                           ;
+; Total                ; 00:00:13     ; --                      ; --                  ; 00:00:32                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
