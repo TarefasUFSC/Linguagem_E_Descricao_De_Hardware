@@ -50,7 +50,10 @@ begin
 				else
 					w_memoria_ram(conv_integer(i_add)) <= i_data;
 				end if;
+			else
+				o_data <= (others =>'z');
 			end if;
+
 		end if;
 		
 	
