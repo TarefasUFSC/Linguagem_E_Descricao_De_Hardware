@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAM
-Fri Jul  1 09:20:25 2022
+Fri Jul  1 09:34:49 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul  1 09:20:25 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul  1 09:34:49 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; RAM                                         ;
 ; Top-level Entity Name              ; RAM                                         ;
@@ -398,7 +398,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri Jul  1 09:20:12 2022
+    Info: Processing started: Fri Jul  1 09:34:36 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAM -c RAM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -409,7 +409,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file memoria
     Info (12022): Found design unit 1: memoria_intel-SYN File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 57
     Info (12023): Found entity 1: MEMORIA_INTEL File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 43
 Info (12127): Elaborating entity "RAM" for the top level hierarchy
-Info (12128): Elaborating entity "MEMORIA_INTEL" for hierarchy "MEMORIA_INTEL:\intel:U01" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 59
+Info (12128): Elaborating entity "MEMORIA_INTEL" for hierarchy "MEMORIA_INTEL:\intel:U01" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 76
 Info (12128): Elaborating entity "altsyncram" for hierarchy "MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
 Info (12130): Elaborated megafunction instantiation "MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
 Info (12133): Instantiated megafunction "MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" with the following parameter: File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
@@ -474,8 +474,8 @@ Info (21057): Implemented 64 device resources after synthesis - the final resour
     Info (21064): Implemented 16 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Fri Jul  1 09:20:25 2022
+    Info: Processing ended: Fri Jul  1 09:34:49 2022
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Total CPU time (on all processors): 00:00:35
 
 

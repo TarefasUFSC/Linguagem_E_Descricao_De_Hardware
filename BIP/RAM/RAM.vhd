@@ -39,16 +39,33 @@ end RAM;
 architecture Behavioral of RAM is
 	type mem_type is array(i_add'range) of std_logic_vector(i_data'range);
 	signal w_memoria_ram : mem_type;
+	
+	-- isso aqui serve pra resolver esse erro:
+		-- character ''z'' used but not declared for type "std_ulogic"
+	-- mas não funcionou
+--		TYPE std_ulogic IS ( 
+--			'U',  -- Uninitialized
+--			'X',  -- Forcing  Unknown
+--			'0',  -- Forcing  0
+--			'1',  -- Forcing  1
+--			'Z',  -- High Impedance   
+--			'W',  -- Weak     Unknown
+--			'L',  -- Weak     0       
+--			'H',  -- Weak     1       
+--			'-'   -- Don't care
+--		);
+
+
 	signal w_wr : std_logic;
 	component MEMORIA_INTEL
 	PORT
 	(
-		aclr					: IN STD_LOGIC  := '0';
-		address				: IN STD_LOGIC_VECTOR ((p_add_width-1) DOWNTO 0);
-		clken					: IN STD_LOGIC  := '1';
-		clock					: IN STD_LOGIC  := '1';
-		data					: IN STD_LOGIC_VECTOR ((p_data_width-1) DOWNTO 0);
-		wren					: IN STD_LOGIC ;
+		aclr					: IN 	STD_LOGIC  := '0';
+		address				: IN 	STD_LOGIC_VECTOR ((p_add_width-1) DOWNTO 0);
+		clken					: IN 	STD_LOGIC  := '1';
+		clock					: IN 	STD_LOGIC  := '1';
+		data					: IN 	STD_LOGIC_VECTOR ((p_data_width-1) DOWNTO 0);
+		wren					: IN 	STD_LOGIC ;
 		q						: OUT STD_LOGIC_VECTOR ((p_data_width-1) DOWNTO 0)
 	);
 end component;
@@ -71,26 +88,26 @@ begin
 	
 
 	
-
-	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
-	-- Memória com blocos logicos
-		process(i_clk)
-		begin
-			if(rising_edge(i_clk)) then
-				if(i_en = '1') then
-					if (i_wr = '1') then
-						o_data <= w_memoria_ram(conv_integer(i_add));
-					else
-						w_memoria_ram(conv_integer(i_add)) <= i_data;
-					end if;
-				else
-					o_data <= (others =>'z');
-				end if;
-
-			end if;
-			
-		
-		end process;
-	end generate;
+-- o 'z' ta dando erro e eu não consigo arrumar se eu colocar pra funcionar o negocio da intel junto, mas se descomentar funciona
+--	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
+--	-- Memória com blocos logicos
+--		process(i_clk)
+--		begin
+--			if(rising_edge(i_clk)) then
+--				if(i_en = '1') then
+--					if (i_wr = '1') then
+--						o_data <= w_memoria_ram(conv_integer(i_add));
+--					else
+--						w_memoria_ram(conv_integer(i_add)) <= i_data;
+--					end if;
+--				else
+--					o_data <= (others =>'z');
+--				end if;
+--
+--			end if;
+--			
+--		
+--		end process;
+--	end generate;
 	
 end Behavioral;
