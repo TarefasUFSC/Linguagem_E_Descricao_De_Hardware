@@ -64,11 +64,12 @@ begin
 			data	 			=> i_data,
 			wren	 			=> w_wr,
 			q	 				=> o_data
-		);
+		);	
+		-- A logica do wren para configurar escrita é inversa do BIP
+		w_wr <= not i_wr;
 	end generate;
 	
-	-- A logica do wren para configurar escrita é inversa do BIP
-	w_wr <= not i_wr;
+
 	
 
 	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
