@@ -10,7 +10,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 ** Warning: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/CRONOMETRO.vhd(28): (vcom-1445) Duplicate signal "i_rst" found in sensitivity list.
 
 
-} {} {}} {{E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd}} {1 {vcom -work work -2002 -explicit {E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd}
+} {} {}} {E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd} {1 {vcom -work work -2002 -explicit {E:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -20,7 +20,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity TB_CRONOMETRO
 -- Compiling architecture behavioral of TB_CRONOMETRO
 
-} {} {}} {E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd} {1 {vcom -work work -2002 -explicit {E:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\Cronometro - Maquina de estado\TB_CRONOMETRO.vhd}
+} {} {}} {{E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd}} {1 {vcom -work work -2002 -explicit {E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/Cronometro - Maquina de estado/TB_CRONOMETRO.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO

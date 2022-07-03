@@ -1,11 +1,11 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
 
 entity RAM is
 	Generic(
-		p_tipo_memoria		: string  := "INTEL"; -- outra opção é BL_LOGICO
+		p_tipo_memoria		: string  := "INTEL"; -- opções são INTEL e BL_LOGICO
 		p_data_width		: integer := 16;
 		p_add_width 		: integer := 12
 	);
@@ -89,25 +89,34 @@ begin
 
 	
 -- o 'z' ta dando erro e eu não consigo arrumar se eu colocar pra funcionar o negocio da intel junto, mas se descomentar funciona
---	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
---	-- Memória com blocos logicos
---		process(i_clk)
---		begin
---			if(rising_edge(i_clk)) then
---				if(i_en = '1') then
---					if (i_wr = '1') then
---						o_data <= w_memoria_ram(conv_integer(i_add));
---					else
---						w_memoria_ram(conv_integer(i_add)) <= i_data;
---					end if;
---				else
---					o_data <= (others =>'z');
---				end if;
---
---			end if;
---			
---		
---		end process;
---	end generate;
+
+	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
+----------------------- Funcionamento--------------------------
+	-- Memória com blocos logicos com clear síncrono
+	-- Quando o a ram estiver desativada a saída fica em 0
+---------------------------------------------------------------
+		process(i_clk)
+		begin
+			
+			if(rising_edge(i_clk)) then
+				
+				if(i_en = '1') then
+					if(i_clr = '1') then
+						o_data <= (others => '0');
+					else
+						if (i_wr = '1') then
+							o_data <= w_memoria_ram(conv_integer(i_add));
+						else
+							w_memoria_ram(conv_integer(i_add)) <= i_data;
+						end if;
+					end if;
+				else
+					o_data <= (others => '0');
+				end if;
+			end if;
+				
+		end process;
+	
+	end generate;
 	
 end Behavioral;
