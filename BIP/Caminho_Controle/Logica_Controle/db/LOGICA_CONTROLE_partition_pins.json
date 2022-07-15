@@ -44,7 +44,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_OPCODE[3]",
+					"name" : "i_OPCODE[0]",
 					"strict" : false
 				},
 				{
@@ -56,7 +56,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_OPCODE[0]",
+					"name" : "i_OPCODE[3]",
 					"strict" : false
 				}
 			]

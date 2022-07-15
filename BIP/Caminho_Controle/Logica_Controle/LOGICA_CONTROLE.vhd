@@ -26,10 +26,10 @@ ARCHITECTURE behavior of LOGICA_CONTROLE IS
 	signal W_reduction1 : std_logic;
 	signal W_reduction2 : std_logic;
 BEGIN
-	w_A <= i_OPCODE(0);
-	w_B <= i_OPCODE(1);
-	w_C <= i_OPCODE(2);
-	w_D <= i_OPCODE(3);
+	w_A <= i_OPCODE(3);
+	w_B <= i_OPCODE(2);
+	w_C <= i_OPCODE(1);
+	w_D <= i_OPCODE(0);
 	-------------------
 	W_reduction1 	<= (NOT W_B) AND (NOT W_C) AND W_D; 
 	o_WR_RAM 		<= W_reduction1;
@@ -42,8 +42,8 @@ BEGIN
 	
 	o_WR_ACC			<= W_A or W_B or W_C;
 	
-	o_SEL_OP1(0)	<= W_B;
-	o_SEL_OP1(1)	<=	W_A or ((not W_B) and W_C and W_D);
+	o_SEL_OP1(1)	<= W_B;
+	o_SEL_OP1(0)	<=	W_A or ((not W_B) and W_C and W_D);
 	
 	o_SEL_OP2		<= W_D and (W_B or W_C);
 	

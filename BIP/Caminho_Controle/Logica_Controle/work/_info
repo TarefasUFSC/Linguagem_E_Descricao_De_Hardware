@@ -4,7 +4,7 @@ K3
 cModel Technology
 dE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\BIP\ROM
 Elogica_controle
-Z0 w1657548942
+Z0 w1657888722
 Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
@@ -19,7 +19,7 @@ V:MUdWXlKS@]L5XIzea0[i2
 Z8 OV;C;10.1d;51
 32
 !i10b 1
-Z9 !s108 1657549082.901000
+Z9 !s108 1657888780.838000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd|
 Z11 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -32,8 +32,8 @@ R4
 Z14 DEx4 work 15 logica_controle 0 22 :MUdWXlKS@]L5XIzea0[i2
 l28
 L20
-V1eA2egHo6E[@Mcb^dEmJJ0
-!s100 g[hDAJ8H9QRBhRDJicDOd2
+Va7TCWMkhW3fYJPU0C9A393
+!s100 ^]90AZ@6<_XlSbJgE:JVY2
 R8
 32
 !i10b 1
@@ -56,7 +56,7 @@ L6
 VI3zQFIcM>7ak]4U=F06K43
 R8
 32
-Z18 !s108 1657549082.677000
+Z18 !s108 1657888780.581000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Controle/Logica_Controle/TB_LOGICA_CONTROLE.vhd|
 Z20 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Controle/Logica_Controle/TB_LOGICA_CONTROLE.vhd|
 R12

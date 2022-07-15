@@ -11,9 +11,9 @@ add wave -noupdate /tb_logica_controle/w_SEL_OP2
 add wave -noupdate /tb_logica_controle/w_SEL_ULA
 add wave -noupdate /tb_logica_controle/w_EN_IN
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+WaveRestoreCursors {{Cursor 1} {29247 ps} 0}
 quietly wave cursor active 1
-configure wave -namecolwidth 229
+configure wave -namecolwidth 230
 configure wave -valuecolwidth 100
 configure wave -justifyvalue left
 configure wave -signalnamewidth 0
