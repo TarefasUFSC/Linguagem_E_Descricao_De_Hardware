@@ -1,37 +1,37 @@
 |ROM
-i_clk => MEMORIA_ROM:intel:U01.clock
-i_en => MEMORIA_ROM:intel:U01.clken
-i_add[0] => MEMORIA_ROM:intel:U01.address[0]
-i_add[1] => MEMORIA_ROM:intel:U01.address[1]
-i_add[2] => MEMORIA_ROM:intel:U01.address[2]
-i_add[3] => MEMORIA_ROM:intel:U01.address[3]
-i_add[4] => MEMORIA_ROM:intel:U01.address[4]
-i_add[5] => MEMORIA_ROM:intel:U01.address[5]
-i_add[6] => MEMORIA_ROM:intel:U01.address[6]
-i_add[7] => MEMORIA_ROM:intel:U01.address[7]
-i_add[8] => MEMORIA_ROM:intel:U01.address[8]
-i_add[9] => MEMORIA_ROM:intel:U01.address[9]
-i_add[10] => MEMORIA_ROM:intel:U01.address[10]
-i_add[11] => MEMORIA_ROM:intel:U01.address[11]
-o_data[0] << MEMORIA_ROM:intel:U01.q[0]
-o_data[1] << MEMORIA_ROM:intel:U01.q[1]
-o_data[2] << MEMORIA_ROM:intel:U01.q[2]
-o_data[3] << MEMORIA_ROM:intel:U01.q[3]
-o_data[4] << MEMORIA_ROM:intel:U01.q[4]
-o_data[5] << MEMORIA_ROM:intel:U01.q[5]
-o_data[6] << MEMORIA_ROM:intel:U01.q[6]
-o_data[7] << MEMORIA_ROM:intel:U01.q[7]
-o_data[8] << MEMORIA_ROM:intel:U01.q[8]
-o_data[9] << MEMORIA_ROM:intel:U01.q[9]
-o_data[10] << MEMORIA_ROM:intel:U01.q[10]
-o_data[11] << MEMORIA_ROM:intel:U01.q[11]
-o_data[12] << MEMORIA_ROM:intel:U01.q[12]
-o_data[13] << MEMORIA_ROM:intel:U01.q[13]
-o_data[14] << MEMORIA_ROM:intel:U01.q[14]
-o_data[15] << MEMORIA_ROM:intel:U01.q[15]
+i_clk => ROM_INTEL_SREG:intel:U01.clock
+i_en => ROM_INTEL_SREG:intel:U01.clken
+i_add[0] => ROM_INTEL_SREG:intel:U01.address[0]
+i_add[1] => ROM_INTEL_SREG:intel:U01.address[1]
+i_add[2] => ROM_INTEL_SREG:intel:U01.address[2]
+i_add[3] => ROM_INTEL_SREG:intel:U01.address[3]
+i_add[4] => ROM_INTEL_SREG:intel:U01.address[4]
+i_add[5] => ROM_INTEL_SREG:intel:U01.address[5]
+i_add[6] => ROM_INTEL_SREG:intel:U01.address[6]
+i_add[7] => ROM_INTEL_SREG:intel:U01.address[7]
+i_add[8] => ROM_INTEL_SREG:intel:U01.address[8]
+i_add[9] => ROM_INTEL_SREG:intel:U01.address[9]
+i_add[10] => ROM_INTEL_SREG:intel:U01.address[10]
+i_add[11] => ROM_INTEL_SREG:intel:U01.address[11]
+o_data[0] << ROM_INTEL_SREG:intel:U01.q[0]
+o_data[1] << ROM_INTEL_SREG:intel:U01.q[1]
+o_data[2] << ROM_INTEL_SREG:intel:U01.q[2]
+o_data[3] << ROM_INTEL_SREG:intel:U01.q[3]
+o_data[4] << ROM_INTEL_SREG:intel:U01.q[4]
+o_data[5] << ROM_INTEL_SREG:intel:U01.q[5]
+o_data[6] << ROM_INTEL_SREG:intel:U01.q[6]
+o_data[7] << ROM_INTEL_SREG:intel:U01.q[7]
+o_data[8] << ROM_INTEL_SREG:intel:U01.q[8]
+o_data[9] << ROM_INTEL_SREG:intel:U01.q[9]
+o_data[10] << ROM_INTEL_SREG:intel:U01.q[10]
+o_data[11] << ROM_INTEL_SREG:intel:U01.q[11]
+o_data[12] << ROM_INTEL_SREG:intel:U01.q[12]
+o_data[13] << ROM_INTEL_SREG:intel:U01.q[13]
+o_data[14] << ROM_INTEL_SREG:intel:U01.q[14]
+o_data[15] << ROM_INTEL_SREG:intel:U01.q[15]
 
 
-|ROM|MEMORIA_ROM:\intel:U01
+|ROM|ROM_INTEL_SREG:\intel:U01
 address[0] => altsyncram:altsyncram_component.address_a[0]
 address[1] => altsyncram:altsyncram_component.address_a[1]
 address[2] => altsyncram:altsyncram_component.address_a[2]
@@ -64,7 +64,7 @@ q[14] <= altsyncram:altsyncram_component.q_a[14]
 q[15] <= altsyncram:altsyncram_component.q_a[15]
 
 
-|ROM|MEMORIA_ROM:\intel:U01|altsyncram:altsyncram_component
+|ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component
 wren_a => ~NO_FANOUT~
 rden_a => ~NO_FANOUT~
 wren_b => ~NO_FANOUT~
@@ -86,24 +86,24 @@ data_a[13] => ~NO_FANOUT~
 data_a[14] => ~NO_FANOUT~
 data_a[15] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_pd14:auto_generated.address_a[0]
-address_a[1] => altsyncram_pd14:auto_generated.address_a[1]
-address_a[2] => altsyncram_pd14:auto_generated.address_a[2]
-address_a[3] => altsyncram_pd14:auto_generated.address_a[3]
-address_a[4] => altsyncram_pd14:auto_generated.address_a[4]
-address_a[5] => altsyncram_pd14:auto_generated.address_a[5]
-address_a[6] => altsyncram_pd14:auto_generated.address_a[6]
-address_a[7] => altsyncram_pd14:auto_generated.address_a[7]
-address_a[8] => altsyncram_pd14:auto_generated.address_a[8]
-address_a[9] => altsyncram_pd14:auto_generated.address_a[9]
-address_a[10] => altsyncram_pd14:auto_generated.address_a[10]
-address_a[11] => altsyncram_pd14:auto_generated.address_a[11]
+address_a[0] => altsyncram_3nr3:auto_generated.address_a[0]
+address_a[1] => altsyncram_3nr3:auto_generated.address_a[1]
+address_a[2] => altsyncram_3nr3:auto_generated.address_a[2]
+address_a[3] => altsyncram_3nr3:auto_generated.address_a[3]
+address_a[4] => altsyncram_3nr3:auto_generated.address_a[4]
+address_a[5] => altsyncram_3nr3:auto_generated.address_a[5]
+address_a[6] => altsyncram_3nr3:auto_generated.address_a[6]
+address_a[7] => altsyncram_3nr3:auto_generated.address_a[7]
+address_a[8] => altsyncram_3nr3:auto_generated.address_a[8]
+address_a[9] => altsyncram_3nr3:auto_generated.address_a[9]
+address_a[10] => altsyncram_3nr3:auto_generated.address_a[10]
+address_a[11] => altsyncram_3nr3:auto_generated.address_a[11]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_pd14:auto_generated.clock0
+clock0 => altsyncram_3nr3:auto_generated.clock0
 clock1 => ~NO_FANOUT~
-clocken0 => altsyncram_pd14:auto_generated.clocken0
+clocken0 => altsyncram_3nr3:auto_generated.clocken0
 clocken1 => ~NO_FANOUT~
 clocken2 => ~NO_FANOUT~
 clocken3 => ~NO_FANOUT~
@@ -111,29 +111,29 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_pd14:auto_generated.q_a[0]
-q_a[1] <= altsyncram_pd14:auto_generated.q_a[1]
-q_a[2] <= altsyncram_pd14:auto_generated.q_a[2]
-q_a[3] <= altsyncram_pd14:auto_generated.q_a[3]
-q_a[4] <= altsyncram_pd14:auto_generated.q_a[4]
-q_a[5] <= altsyncram_pd14:auto_generated.q_a[5]
-q_a[6] <= altsyncram_pd14:auto_generated.q_a[6]
-q_a[7] <= altsyncram_pd14:auto_generated.q_a[7]
-q_a[8] <= altsyncram_pd14:auto_generated.q_a[8]
-q_a[9] <= altsyncram_pd14:auto_generated.q_a[9]
-q_a[10] <= altsyncram_pd14:auto_generated.q_a[10]
-q_a[11] <= altsyncram_pd14:auto_generated.q_a[11]
-q_a[12] <= altsyncram_pd14:auto_generated.q_a[12]
-q_a[13] <= altsyncram_pd14:auto_generated.q_a[13]
-q_a[14] <= altsyncram_pd14:auto_generated.q_a[14]
-q_a[15] <= altsyncram_pd14:auto_generated.q_a[15]
+q_a[0] <= altsyncram_3nr3:auto_generated.q_a[0]
+q_a[1] <= altsyncram_3nr3:auto_generated.q_a[1]
+q_a[2] <= altsyncram_3nr3:auto_generated.q_a[2]
+q_a[3] <= altsyncram_3nr3:auto_generated.q_a[3]
+q_a[4] <= altsyncram_3nr3:auto_generated.q_a[4]
+q_a[5] <= altsyncram_3nr3:auto_generated.q_a[5]
+q_a[6] <= altsyncram_3nr3:auto_generated.q_a[6]
+q_a[7] <= altsyncram_3nr3:auto_generated.q_a[7]
+q_a[8] <= altsyncram_3nr3:auto_generated.q_a[8]
+q_a[9] <= altsyncram_3nr3:auto_generated.q_a[9]
+q_a[10] <= altsyncram_3nr3:auto_generated.q_a[10]
+q_a[11] <= altsyncram_3nr3:auto_generated.q_a[11]
+q_a[12] <= altsyncram_3nr3:auto_generated.q_a[12]
+q_a[13] <= altsyncram_3nr3:auto_generated.q_a[13]
+q_a[14] <= altsyncram_3nr3:auto_generated.q_a[14]
+q_a[15] <= altsyncram_3nr3:auto_generated.q_a[15]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|ROM|MEMORIA_ROM:\intel:U01|altsyncram:altsyncram_component|altsyncram_pd14:auto_generated
+|ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_3nr3:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR

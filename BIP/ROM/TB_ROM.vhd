@@ -16,22 +16,22 @@ architecture behavioral of TB_ROM is
 	component ROM is
 		port(
 			-- clock
-			i_clk 				: in 	std_logic;
-					
-			-- pino SEL do logisim
-				-- Se a ROM ta ligada
-			i_en 					: in 	std_logic;
-			
-			-- entrada de endereço
-			i_add 				: in 	std_logic_vector((p_add_width-1) downto 0);
-			
-			-- saida
-			o_data 				: out std_logic_vector((p_data_width-1) downto 0)
+		i_clk 				: in 	std_logic;			
+		-- pino SEL do logisim
+			-- Se a ROM ta ligada
+		i_en 					: in 	std_logic;
+		-- entrada de endereço
+		i_add 				: in 	std_logic_vector((p_add_width-1) downto 0);
+
+		
+		-- saida
+		o_data 				: out std_logic_vector((p_data_width-1) downto 0)
 	);
 	end component;
 	
 	-- cria um signal w_x pra cada port
 	signal w_clk 				:  	std_logic;
+	signal w_clr 				:  	std_logic;
 	signal w_en 				:  	std_logic;
 	signal w_add 				:  	std_logic_vector((p_add_width-1) downto 0);
 	signal w_data 				:  std_logic_vector((p_data_width-1) downto 0);
@@ -63,19 +63,20 @@ begin
 	process
 	begin
 		-- colocar os sinais aqui
-		w_en <= '0';		
+		w_en <= '1';		
 		w_add <= x"000";
 		wait for 40 ns;
-		w_en <= '1';
+		w_en <= '0';
 		w_add <= x"001";
 		wait for 30 ns;
 		w_add <= x"002";
 		wait for 10 ns	;	
-		w_en <= '0';	
+		w_en <= '1';	
 		wait for 15 ns	;
-		w_en <= '1';
+		w_en <= '0';
 		w_add <= x"002";
 		wait;
-		
 	end process;
+	
+
 end behavioral;

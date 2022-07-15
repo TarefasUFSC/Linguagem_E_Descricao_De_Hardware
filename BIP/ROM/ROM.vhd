@@ -11,12 +11,10 @@ entity ROM is
 	);
 	Port(
 		-- clock
-		i_clk 				: in 	std_logic;
-				
+		i_clk 				: in 	std_logic;			
 		-- pino SEL do logisim
 			-- Se a ROM ta ligada
 		i_en 					: in 	std_logic;
-		
 		-- entrada de endereço
 		i_add 				: in 	std_logic_vector((p_add_width-1) downto 0);
 		
@@ -26,33 +24,31 @@ entity ROM is
 end ROM;
 
 architecture Behavioral of ROM is
-	type mem_type is array(i_add'range) of std_logic_vector(o_data'range);
+	type mem_type is array(i_add'range) of std_logic_vector(o_data'range);	
 	signal w_memoria_rom : mem_type;
 	
-	component MEMORIA_ROM
-	PORT
-	(
-		address		: IN STD_LOGIC_VECTOR ((p_add_width-1) DOWNTO 0);
-		clken			: IN STD_LOGIC  := '1';
-		clock			: IN STD_LOGIC  := '1';
-		q				: OUT STD_LOGIC_VECTOR ((p_data_width-1) DOWNTO 0)
-	);
-end component;
+	component ROM_INTEL_SREG
+		PORT
+		(
+			address	: IN STD_LOGIC_VECTOR (11 DOWNTO 0);
+			clken		: IN STD_LOGIC  := '1';
+			clock		: IN STD_LOGIC  := '1';
+			q			: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
+		);
+	end component;
 
-	
 begin
 
 	intel : if(p_tipo_memoria = "INTEL") generate	
-		U01 : MEMORIA_ROM PORT MAP (
-			address	=> i_add,
-			clken	 	=> i_en,
-			clock	 	=> i_clk,
-			q	 		=> o_data
+		U01 : ROM_INTEL_SREG PORT MAP (
+		address	=> i_add,
+		clken	 	=> i_en,
+		clock	 	=> i_clk,
+		q			=> o_data
 	);
 
 	
 	end generate;
-	
 	
 	bl_logico : if(p_tipo_memoria = "BL_LOGICO") generate	
 
