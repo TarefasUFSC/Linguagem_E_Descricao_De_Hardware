@@ -16,7 +16,7 @@ architecture behavioral of TB_ACC is
 		Port(
 			i_RST 				: in std_logic;
 			i_CLK 				: in std_logic;
-			i_EN 					: in std_logic;
+			i_WR_ACC			: in std_logic;
 			i_DATA				: in std_logic_vector((p_data_width-1) downto 0);
 			o_DATA				: out std_logic_vector((p_data_width-1) downto 0)
 			
@@ -27,8 +27,8 @@ architecture behavioral of TB_ACC is
 	signal w_RST 				: std_logic;
 	signal w_CLK 				: std_logic;
 	signal w_EN					: std_logic;
-	signal w_i_DATA			: std_logic_vector((p_data_width-1) downto 0);
-	signal w_o_DATA			: std_logic_vector((p_data_width-1) downto 0);
+	signal w_i_DATA				: std_logic_vector((p_data_width-1) downto 0);
+	signal w_o_DATA				: std_logic_vector((p_data_width-1) downto 0);
 	
 begin
 
@@ -37,9 +37,9 @@ begin
 		-- Só lembra que aqui a seta é: pino_do_componente => w_x equivalente
 		i_RST 				=> w_RST ,
 		i_CLK 				=> w_CLK ,
-		i_EN 					=> w_EN ,
+		i_WR_ACC			=> w_EN ,
 		i_DATA				=> w_i_DATA ,
-		o_DATA				=>	w_o_DATA
+		o_DATA				=> w_o_DATA
 	);
 	
 

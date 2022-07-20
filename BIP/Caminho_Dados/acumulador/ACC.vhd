@@ -10,7 +10,7 @@ entity ACC is
 	Port(
 		i_RST 				: in std_logic;
 		i_CLK 				: in std_logic;
-		i_EN 					: in std_logic;
+		i_WR_ACC 			: in std_logic;
 		i_DATA				: in std_logic_vector((p_data_width-1) downto 0);
 		o_DATA				: out std_logic_vector((p_data_width-1) downto 0)
 		
@@ -18,13 +18,13 @@ entity ACC is
 end ACC;
 ARCHITECTURE behavior of ACC IS
 BEGIN
-	reg_assincrono: process(i_CLK,i_RST,i_EN)
+	reg_assincrono: process(i_CLK,i_RST,i_WR_ACC)
 	begin
 	
 			if (i_RST = '1') then
 				o_DATA <= (others => '0'); 
 			else
-				if (i_EN = '1') then
+				if (i_WR_ACC = '1') then
 					if (rising_edge(i_CLK)) then
 						o_DATA <= i_DATA;
 					end if;
