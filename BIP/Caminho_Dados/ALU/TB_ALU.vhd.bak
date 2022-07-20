@@ -1,0 +1,37 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity TB_ALU is
+
+end TB_ALU;
+
+architecture behavioral of TB_ALU is
+
+	component ALU is
+		port(
+			-- mesmos ports do coponente (só copiar do entity)
+		);
+	end component;
+	
+	-- cria um signal w_x pra cada port
+	
+begin
+
+	UUT: ALU
+	port map(
+		-- Só lembra que aqui a seta é: pino_do_componente => w_x equivalente
+	);
+	
+
+
+
+-- teste XX
+	process
+	begin
+		-- colocar os sinais aqui
+		wait;
+		
+	end process;
+end behavioral;
