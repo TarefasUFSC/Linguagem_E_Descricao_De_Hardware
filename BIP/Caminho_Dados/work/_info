@@ -1,0 +1,200 @@
+m255
+K3
+13
+cModel Technology
+dE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\BIP\Caminho_Controle\Logica_Controle
+Eacc
+Z0 w1658359154
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dE:\Projetos\UFSC\Aulas\Linguagem_E_Descricao_De_Hardware\BIP\Caminho_Dados
+Z6 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd
+Z7 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd
+l0
+L6
+VB``3j:V_NDjm__VC;eQ`73
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1658500068.732000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd|
+Z11 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 GIKB5]k7n?N]]Xz2;jTVN2
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 3 acc 0 22 B``3j:V_NDjm__VC;eQ`73
+l20
+L19
+V1NO_I?AcbNz6oUfZUfn<W2
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 _Q3BSJJlGNYC[_2=Jmh[=1
+!i10b 1
+Ealu
+Z14 w1658342379
+R1
+R2
+R3
+R4
+R5
+Z15 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd
+Z16 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd
+l0
+L6
+VBFI?SGL>VK<cZMo4cabGb1
+R8
+32
+Z17 !s108 1658500068.818000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd|
+Z19 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd|
+R12
+R13
+!s100 =h>;cV^9EB]^:46h4SPPc3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 BFI?SGL>VK<cZMo4cabGb1
+l22
+L17
+VgI@le=e<aX1:V<1fEgV?N0
+!s100 CheASM[l?zCdm[28QAoO;1
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!i10b 1
+Ecaminho_dados
+Z20 w1658500041
+R1
+R2
+R3
+R4
+R5
+Z21 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd
+Z22 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd
+l0
+L6
+V7HCV8Lo_jda2iVf:RQn8D0
+!s100 gX@_ecaX6D[DJZgiZ:FjF3
+R8
+32
+!i10b 1
+Z23 !s108 1658500068.900000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd|
+Z25 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd|
+R12
+R13
+Abehavior
+R1
+R2
+R3
+R4
+Z26 DEx4 work 13 caminho_dados 0 22 7HCV8Lo_jda2iVf:RQn8D0
+l69
+L27
+VLSkXEg_fhoZbjEDen=QJ13
+!s100 KoOLD3Wb[IkH3Uj7ibo4j2
+R8
+32
+!i10b 1
+R23
+R24
+R25
+R12
+R13
+Einstruction_register
+Z27 w1658337455
+R1
+R2
+R3
+R4
+R5
+Z28 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
+Z29 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
+l0
+L6
+VElXT4I5^mfO:Oi6TQJE_S3
+R8
+32
+Z30 !s108 1658500068.646000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
+Z32 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
+R12
+R13
+!s100 7QZ[g2CW?S`HcF?fZhh=c3
+!i10b 1
+Abehavior
+R1
+R2
+R3
+R4
+DEx4 work 20 instruction_register 0 22 ElXT4I5^mfO:Oi6TQJE_S3
+l19
+L18
+V6?<8XF:zaASHgc?nVT0ca3
+R8
+32
+R30
+R31
+R32
+R12
+R13
+!s100 Xj@DYkYzAnm8TeKl8jBSZ2
+!i10b 1
+Etb_caminho_dados
+Z33 w1658499015
+R1
+R2
+R3
+R4
+R5
+Z34 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
+Z35 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
+l0
+L6
+VVDG5Gl_DGd?KA4Gm1if?`1
+R8
+32
+Z36 !s108 1658500068.565000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
+Z38 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
+R12
+R13
+!s100 ?>b6:JYz[_BN=iZnS`>YF1
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 16 tb_caminho_dados 0 22 VDG5Gl_DGd?KA4Gm1if?`1
+l48
+L13
+VRh@Wd;k7GHV1<91FioW_33
+R8
+32
+R36
+R37
+R38
+R12
+R13
+!s100 1YR6_?KBJl8VKof>oIf?F2
+!i10b 1

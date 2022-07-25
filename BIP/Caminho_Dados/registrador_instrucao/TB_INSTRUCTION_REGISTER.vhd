@@ -34,7 +34,7 @@ begin
 		-- Só lembra que aqui a seta é: pino_do_componente => w_x equivalente
 		i_rom					=> w_rom,
 		o_opcode				=> w_opcode,
-		o_address_ram		=> w_address_ram
+		o_address_ram			=> w_address_ram
 	);
 	
 

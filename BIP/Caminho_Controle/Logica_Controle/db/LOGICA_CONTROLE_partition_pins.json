@@ -40,10 +40,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "o_EN_IN",
-					"strict" : false
-				},
-				{
 					"name" : "i_OPCODE[0]",
 					"strict" : false
 				},

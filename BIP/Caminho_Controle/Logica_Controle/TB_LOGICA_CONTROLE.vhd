@@ -19,8 +19,7 @@ architecture behavioral of TB_LOGICA_CONTROLE is
 			o_WR_ACC: 	out std_logic;
 			o_SEL_OP1: 	out std_logic_vector(1 downto 0);
 			o_SEL_OP2: 	out std_logic;
-			o_SEL_ULA: 	out std_logic;
-			o_EN_IN: 	out std_logic
+			o_SEL_ULA: 	out std_logic
 		);
 	end component;
 	
@@ -34,7 +33,6 @@ architecture behavioral of TB_LOGICA_CONTROLE is
 	signal w_SEL_OP1:		std_logic_vector(1 downto 0);
 	signal w_SEL_OP2:		std_logic;
 	signal w_SEL_ULA:		std_logic;
-	signal w_EN_IN:		std_logic;
 	
 begin
 
@@ -49,8 +47,7 @@ begin
 		o_WR_ACC 	=> w_WR_ACC,
 		o_SEL_OP1 	=> w_SEL_OP1,
 		o_SEL_OP2 	=> w_SEL_OP2,
-		o_SEL_ULA 	=> w_SEL_ULA,
-		o_EN_IN 		=> w_EN_IN
+		o_SEL_ULA 	=> w_SEL_ULA
 	);
 	
 

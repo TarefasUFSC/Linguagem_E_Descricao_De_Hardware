@@ -13,8 +13,7 @@ entity LOGICA_CONTROLE is
 		o_WR_ACC: 	out std_logic;
 		o_SEL_OP1: 	out std_logic_vector(1 downto 0);
 		o_SEL_OP2: 	out std_logic;
-		o_SEL_ULA: 	out std_logic;
-		o_EN_IN: 	out std_logic
+		o_SEL_ULA: 	out std_logic
 	);
 end LOGICA_CONTROLE;
 ARCHITECTURE behavior of LOGICA_CONTROLE IS
@@ -42,12 +41,11 @@ BEGIN
 	
 	o_WR_ACC			<= W_A or W_B or W_C;
 	
-	o_SEL_OP1(1)	<= W_B;
+	o_SEL_OP1(1)	<= W_B or W_A;
 	o_SEL_OP1(0)	<=	W_A or ((not W_B) and W_C and W_D);
 	
 	o_SEL_OP2		<= W_D and (W_B or W_C);
 	
 	o_SEL_ULA		<= W_B and W_C;
-	o_EN_IN			<= W_A;
 	
 END behavior;
