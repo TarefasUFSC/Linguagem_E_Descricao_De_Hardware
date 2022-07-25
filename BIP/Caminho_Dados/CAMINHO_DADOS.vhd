@@ -69,25 +69,22 @@ ARCHITECTURE behavior of CAMINHO_DADOS IS
 BEGIN
 	
 	-- Expansões
-	exp_ir1: for i in 3 downto 0 generate
-		w_expanded_out_ir((p_data_width-1)-(3-i)) <=  '0';									
-	end generate exp_ir1;
-	exp_ir2: for i in (p_address_width-1) downto 0 generate
+	exp_i: for i in 3 downto 0 generate
+		w_expanded_out_ir((p_data_width-1)-(3-i)) <=  '0';	
+		w_expanded_switches((p_data_width-1)-(3-i)) <=  '0';								
+	end generate exp_i;
+	exp_ir: for i in (p_address_width-1) downto 0 generate
 		w_expanded_out_ir(i) <=  w_address_ram(i);									
-	end generate exp_ir2;
-	
-	exp_sw1: for i in 3 downto 0 generate
-		w_expanded_switches((p_data_width-1)-(3-i)) <=  '0';									
-	end generate exp_sw1;
-	exp_sw2: for i in (p_address_width-1) downto 0 generate
+	end generate exp_ir;
+	exp_sw: for i in (p_address_width-1) downto 0 generate
 		w_expanded_switches(i) <=  i_switches(i);									
-	end generate exp_sw2;
+	end generate exp_sw;
 	
 	-----------------------------------------------------------------------------------------------
 
 	-- Multiplexadores
 	
-	-- Mux padrão
+	-- Mux padrão (entrada 1 da ULA)
 		-- entradas:
 			-- dout_ram
 			-- address_ram (saida do ir ) [pelo pdf do trabalho essa entrada compete com i_switches
@@ -103,16 +100,12 @@ BEGIN
 					w_expanded_switches WHEN "11",
 					(others =>'0') WHEN OTHERS;
 
---	defaut_mux : process(i_sel_op1)
---	begin
---		case i_sel_op1 is
---			when "00" => w_in_acc <= i_dout_ram;
---			when "01" => w_in_acc <= w_expanded_out_ir;
---			when "10" => w_in_acc <= w_out_ula;
---			when "11" => w_in_acc <= (others =>'0'); -- ainda não expandi o switch
---			when others => null;
---		end case;
---	end process defaut_mux;
+
+	-- Mux da entrada 0 da ULA
+	with i_sel_op2 SELECT      -- expressao_escolha =
+		w_in_ula0 <= w_out_acc when '0',
+					w_expanded_out_ir when '1',
+					(others =>'0') when OTHERS;
 
 	-----------------------------------------------------------------------------------------------
 	-- Conexões internas

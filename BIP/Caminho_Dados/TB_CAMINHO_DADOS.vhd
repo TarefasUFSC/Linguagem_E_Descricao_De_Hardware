@@ -70,9 +70,9 @@ begin
 	process
 	begin
 		w_clk <= '0';
-		wait for 10 NS;
+		wait for 5 NS;
 		w_clk <= '1';
-		wait for 10 NS;
+		wait for 5 NS;
 	end process;
 
 	-- reset
@@ -88,15 +88,66 @@ begin
 -- teste CAMINHO_DADOS
 	process
 	begin
+		
+		wait for 15 NS;
 		-- colocar os sinais aqui
+		w_dout_rom	<= "0010000000001111";
+		w_dout_ram	<= "0000000000000001";
 		w_switches	<= "010101010101" ;
+		-- w_wr_ram <= '0';
+		-- w_en_ram <= '1';
+		-- w_en_pc <= '1';
+		-- w_en_rom <= '1';
 		w_wr_acc	<= '1';
-		w_sel_op1(0)	<= '1';
 		w_sel_op1(1)	<= '0';
-		w_sel_op2	<= '1';
+		w_sel_op1(0)	<= '0';
+		w_sel_op2	<= '0';
 		w_sel_ula	<= '0';
+		wait for 10 NS;
+
 		w_dout_rom	<= "0011000000001111";
 		w_dout_ram	<= "0000000000000001";
+		w_switches	<= "010101010101" ;
+		-- w_wr_ram <= '0';
+		-- w_en_ram <= '0';
+		-- w_en_pc <= '1';
+		-- w_en_rom <= '1';
+		w_wr_acc	<= '1';
+		w_sel_op1(1)	<= '0';
+		w_sel_op1(0)	<= '1';
+		w_sel_op2	<= '1';
+		w_sel_ula	<= '0';
+		wait for 10 NS;
+
+		w_dout_rom	<= "0100000000001111";
+		w_dout_ram	<= "0000000000000001";
+		w_switches	<= "010101010101" ;
+		-- w_wr_ram <= '0';
+		-- w_en_ram <= '1';
+		-- w_en_pc <= '1';
+		-- w_en_rom <= '1';
+		w_wr_acc	<= '1';
+		w_sel_op1(1)	<= '1';
+		w_sel_op1(0)	<= '0';
+		w_sel_op2	<= '0';
+		w_sel_ula	<= '0';
+		wait for 10 NS;
+		
+		w_dout_rom	<= "1000000000001111";
+		w_dout_ram	<= "0000000000000001";
+		w_switches	<= "010101010101" ;
+		-- w_wr_ram <= '0';
+		-- w_en_ram <= '0';
+		-- w_en_pc <= '1';
+		-- w_en_rom <= '1';
+		w_wr_acc	<= '1';
+		w_sel_op1(1)	<= '1';
+		w_sel_op1(0)	<= '1';
+		w_sel_op2	<= '0';
+		w_sel_ula	<= '0';
+
+		
+		wait for 10 NS;
 		wait;
 		
 	end process;

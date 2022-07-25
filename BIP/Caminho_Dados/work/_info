@@ -17,7 +17,7 @@ L6
 VB``3j:V_NDjm__VC;eQ`73
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1658500068.732000
+Z9 !s108 1658718275.259000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd|
 Z11 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -56,7 +56,7 @@ L6
 VBFI?SGL>VK<cZMo4cabGb1
 R8
 32
-Z17 !s108 1658500068.818000
+Z17 !s108 1658718275.344000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd|
 Z19 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd|
 R12
@@ -82,7 +82,7 @@ R12
 R13
 !i10b 1
 Ecaminho_dados
-Z20 w1658500041
+Z20 w1658716832
 R1
 R2
 R3
@@ -97,7 +97,7 @@ V7HCV8Lo_jda2iVf:RQn8D0
 R8
 32
 !i10b 1
-Z23 !s108 1658500068.900000
+Z23 !s108 1658718275.426000
 Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd|
 Z25 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/CAMINHO_DADOS.vhd|
 R12
@@ -110,8 +110,8 @@ R4
 Z26 DEx4 work 13 caminho_dados 0 22 7HCV8Lo_jda2iVf:RQn8D0
 l69
 L27
-VLSkXEg_fhoZbjEDen=QJ13
-!s100 KoOLD3Wb[IkH3Uj7ibo4j2
+Z27 Vf9FNXKNdE^I`VSeQ[Y7:]0
+Z28 !s100 [L53SLeOLkJNdlkgb@UBa1
 R8
 32
 !i10b 1
@@ -121,22 +121,22 @@ R25
 R12
 R13
 Einstruction_register
-Z27 w1658337455
+Z29 w1658337455
 R1
 R2
 R3
 R4
 R5
-Z28 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
-Z29 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
+Z30 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
+Z31 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd
 l0
 L6
 VElXT4I5^mfO:Oi6TQJE_S3
 R8
 32
-Z30 !s108 1658500068.646000
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
-Z32 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
+Z32 !s108 1658718275.170000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
+Z34 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
 R12
 R13
 !s100 7QZ[g2CW?S`HcF?fZhh=c3
@@ -152,30 +152,30 @@ L18
 V6?<8XF:zaASHgc?nVT0ca3
 R8
 32
-R30
-R31
 R32
+R33
+R34
 R12
 R13
 !s100 Xj@DYkYzAnm8TeKl8jBSZ2
 !i10b 1
 Etb_caminho_dados
-Z33 w1658499015
+Z35 w1658718266
 R1
 R2
 R3
 R4
 R5
-Z34 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
-Z35 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
+Z36 8E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
+Z37 FE:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd
 l0
 L6
 VVDG5Gl_DGd?KA4Gm1if?`1
 R8
 32
-Z36 !s108 1658500068.565000
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
-Z38 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
+Z38 !s108 1658718275.090000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
+Z40 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd|
 R12
 R13
 !s100 ?>b6:JYz[_BN=iZnS`>YF1
@@ -188,13 +188,13 @@ R4
 DEx4 work 16 tb_caminho_dados 0 22 VDG5Gl_DGd?KA4Gm1if?`1
 l48
 L13
-VRh@Wd;k7GHV1<91FioW_33
+V11`CNU@@nF^00hW;?gM]]3
 R8
 32
-R36
-R37
 R38
+R39
+R40
 R12
 R13
-!s100 1YR6_?KBJl8VKof>oIf?F2
+!s100 _<aRSj=Zfm^D1:2N>mlYl2
 !i10b 1
