@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CAMINHO_DADOS
-Fri Jul 22 11:27:32 2022
+Tue Jul 26 00:00:59 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -48,16 +48,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jul 22 11:27:32 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 26 00:00:58 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; CAMINHO_DADOS                               ;
 ; Top-level Entity Name              ; CAMINHO_DADOS                               ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 45                                          ;
-;     Total combinational functions  ; 45                                          ;
+; Total logic elements               ; 77                                          ;
+;     Total combinational functions  ; 77                                          ;
 ;     Dedicated logic registers      ; 16                                          ;
 ; Total registers                    ; 16                                          ;
-; Total pins                         ; 83                                          ;
+; Total pins                         ; 99                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,23 +162,24 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                         ;
-+------------------------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path               ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                                              ; Library ;
-+------------------------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
-; acumulador/ACC.vhd                             ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd                             ;         ;
-; ALU/ALU.vhd                                    ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd                                    ;         ;
-; registrador_instrucao/INSTRUCTION_REGISTER.vhd ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd ;         ;
-; caminho_dados.vhd                              ; yes             ; Auto-Found VHDL File  ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd                              ;         ;
-+------------------------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                  ;
++------------------------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path               ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                                                       ; Library ;
++------------------------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
+; acumulador/ACC.vhd                             ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd                             ;         ;
+; ALU/ALU.vhd                                    ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd                                    ;         ;
+; registrador_instrucao/INSTRUCTION_REGISTER.vhd ; yes             ; User VHDL File        ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd ;         ;
+; caminho_dados.vhd                              ; yes             ; Auto-Found VHDL File  ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd                              ;         ;
++------------------------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------+
@@ -186,30 +187,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------+
 ; Resource                                    ; Usage              ;
 +---------------------------------------------+--------------------+
-; Estimated Total logic elements              ; 45                 ;
+; Estimated Total logic elements              ; 77                 ;
 ;                                             ;                    ;
-; Total combinational functions               ; 45                 ;
+; Total combinational functions               ; 77                 ;
 ; Logic element usage by number of LUT inputs ;                    ;
 ;     -- 4 input functions                    ; 24                 ;
-;     -- 3 input functions                    ; 4                  ;
-;     -- <=2 input functions                  ; 17                 ;
+;     -- 3 input functions                    ; 31                 ;
+;     -- <=2 input functions                  ; 22                 ;
 ;                                             ;                    ;
 ; Logic elements by mode                      ;                    ;
-;     -- normal mode                          ; 29                 ;
+;     -- normal mode                          ; 61                 ;
 ;     -- arithmetic mode                      ; 16                 ;
 ;                                             ;                    ;
 ; Total registers                             ; 16                 ;
 ;     -- Dedicated logic registers            ; 16                 ;
 ;     -- I/O registers                        ; 0                  ;
 ;                                             ;                    ;
-; I/O pins                                    ; 83                 ;
+; I/O pins                                    ; 99                 ;
 ;                                             ;                    ;
 ; Embedded Multiplier 9-bit elements          ; 0                  ;
 ;                                             ;                    ;
 ; Maximum fan-out node                        ; i_sel_op1[1]~input ;
 ; Maximum fan-out                             ; 22                 ;
-; Total fan-out                               ; 308                ;
-; Average fan-out                             ; 1.36               ;
+; Total fan-out                               ; 448                ;
+; Average fan-out                             ; 1.54               ;
 +---------------------------------------------+--------------------+
 
 
@@ -218,9 +219,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+---------------+--------------+
-; |CAMINHO_DADOS             ; 45 (28)             ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 83   ; 0            ; 0          ; |CAMINHO_DADOS                     ; CAMINHO_DADOS ; work         ;
+; |CAMINHO_DADOS             ; 77 (44)             ; 16 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 99   ; 0            ; 0          ; |CAMINHO_DADOS                     ; CAMINHO_DADOS ; work         ;
 ;    |ACC:acumulador|        ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CAMINHO_DADOS|ACC:acumulador      ; ACC           ; work         ;
-;    |ALU:uni_logica_arit|   ; 17 (17)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CAMINHO_DADOS|ALU:uni_logica_arit ; ALU           ; work         ;
+;    |ALU:uni_logica_arit|   ; 33 (33)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |CAMINHO_DADOS|ALU:uni_logica_arit ; ALU           ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -246,9 +247,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |CAMINHO_DADOS|ACC:acumulador|o_DATA[15] ;
-; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |CAMINHO_DADOS|ACC:acumulador|o_DATA[6]  ;
-; 1:1                ; 16 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |CAMINHO_DADOS|ALU:uni_logica_arit|Add0  ;
-; 1:1                ; 16 bits   ; 0 LEs         ; 0 LEs                ; 0 LEs                  ; No         ; |CAMINHO_DADOS|ALU:uni_logica_arit|Add0  ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |CAMINHO_DADOS|ACC:acumulador|o_DATA[11] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------+
 
 
@@ -299,21 +298,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 83                          ;
+; boundary_port         ; 99                          ;
 ; cycloneiii_ff         ; 16                          ;
 ;     ENA CLR           ; 12                          ;
 ;     ENA CLR SCLR      ; 4                           ;
-; cycloneiii_lcell_comb ; 45                          ;
+; cycloneiii_lcell_comb ; 77                          ;
 ;     arith             ; 16                          ;
-;         1 data inputs ; 15                          ;
 ;         2 data inputs ; 1                           ;
-;     normal            ; 29                          ;
-;         0 data inputs ; 1                           ;
-;         3 data inputs ; 4                           ;
+;         3 data inputs ; 15                          ;
+;     normal            ; 61                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 16                          ;
 ;         4 data inputs ; 24                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.20                        ;
-; Average LUT depth     ; 2.13                        ;
+; Max LUT depth         ; 5.10                        ;
+; Average LUT depth     ; 3.52                        ;
 +-----------------------+-----------------------------+
 
 
@@ -332,43 +331,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri Jul 22 11:27:22 2022
+    Info: Processing started: Tue Jul 26 00:00:40 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CAMINHO_DADOS -c CAMINHO_DADOS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file acumulador/acc.vhd
-    Info (12022): Found design unit 1: ACC-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd Line: 19
-    Info (12023): Found entity 1: ACC File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/acumulador/ACC.vhd Line: 6
+    Info (12022): Found design unit 1: ACC-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd Line: 19
+    Info (12023): Found entity 1: ACC File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file alu/alu.vhd
-    Info (12022): Found design unit 1: ALU-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd Line: 17
-    Info (12023): Found entity 1: ALU File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/ALU/ALU.vhd Line: 6
+    Info (12022): Found design unit 1: ALU-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd Line: 17
+    Info (12023): Found entity 1: ALU File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file registrador_instrucao/instruction_register.vhd
-    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd Line: 18
-    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd Line: 6
+    Info (12022): Found design unit 1: INSTRUCTION_REGISTER-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd Line: 18
+    Info (12023): Found entity 1: INSTRUCTION_REGISTER File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file tb_caminho_dados.vhd
-    Info (12022): Found design unit 1: TB_CAMINHO_DADOS-behavioral File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd Line: 13
-    Info (12023): Found entity 1: TB_CAMINHO_DADOS File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/TB_CAMINHO_DADOS.vhd Line: 6
+    Info (12022): Found design unit 1: TB_CAMINHO_DADOS-behavioral File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/TB_CAMINHO_DADOS.vhd Line: 13
+    Info (12023): Found entity 1: TB_CAMINHO_DADOS File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/TB_CAMINHO_DADOS.vhd Line: 6
 Warning (12125): Using design file caminho_dados.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: CAMINHO_DADOS-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 27
-    Info (12023): Found entity 1: CAMINHO_DADOS File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 6
+    Info (12022): Found design unit 1: CAMINHO_DADOS-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd Line: 27
+    Info (12023): Found entity 1: CAMINHO_DADOS File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd Line: 6
 Info (12127): Elaborating entity "CAMINHO_DADOS" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at caminho_dados.vhd(29): used implicit default value for signal "w_in_ula0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 29
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:uni_logica_arit" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 127
-Info (12128): Elaborating entity "ACC" for hierarchy "ACC:acumulador" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 136
-Info (12128): Elaborating entity "INSTRUCTION_REGISTER" for hierarchy "INSTRUCTION_REGISTER:registrador_instrucao" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 146
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:uni_logica_arit" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd Line: 121
+Info (12128): Elaborating entity "ACC" for hierarchy "ACC:acumulador" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd Line: 130
+Info (12128): Elaborating entity "INSTRUCTION_REGISTER" for hierarchy "INSTRUCTION_REGISTER:registrador_instrucao" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/caminho_dados.vhd Line: 140
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_sel_op2" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/Caminho_Dados/caminho_dados.vhd Line: 15
-Info (21057): Implemented 128 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 176 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 51 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 45 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4806 megabytes
-    Info: Processing ended: Fri Jul 22 11:27:32 2022
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21059): Implemented 48 output pins
+    Info (21061): Implemented 77 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Tue Jul 26 00:00:59 2022
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:45
 
 

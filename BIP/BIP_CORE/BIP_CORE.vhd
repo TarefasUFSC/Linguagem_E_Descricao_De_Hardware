@@ -16,7 +16,8 @@ entity BIP_CORE is
 		i_switches : in std_logic_vector(p_address_width-1 downto 0);
 		o_address_rom : out std_logic_vector(p_address_width-1 downto 0);
 		o_address_ram : out std_logic_vector(p_address_width-1 downto 0);
-		o_din_ram: out std_logic_vector(p_data_width-1 downto 0)
+		o_din_ram: out std_logic_vector(p_data_width-1 downto 0);
+		o_out_acc : out std_logic_vector(p_data_width-1 downto 0)
 	);
 end BIP_CORE;
 ARCHITECTURE behavior of BIP_CORE IS
@@ -60,7 +61,8 @@ ARCHITECTURE behavior of BIP_CORE IS
 		i_rst				: in std_logic ;
 		o_opcode			: out std_logic_vector(3 downto 0);
 		o_address_ram	: out std_logic_vector((p_address_width-1) downto 0);
-		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0)
+		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0);
+		o_out_acc		: OUT STD_LOGIC_VECTOR(p_data_width-1 downto 0)
 
 	);
 	end component;
@@ -96,7 +98,8 @@ BEGIN
 		i_rst				=>i_rst,
 		o_opcode			=>w_opcode,
 		o_address_ram	=>w_address_ram,
-		o_din_ram		=>o_din_ram
+		o_din_ram		=>o_din_ram,
+		o_out_acc		=>o_out_acc
 
 	);
 END behavior;

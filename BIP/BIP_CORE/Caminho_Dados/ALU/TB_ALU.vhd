@@ -45,8 +45,8 @@ begin
 	process
 	begin
 		-- colocar os sinais aqui
-		w_A <= x"0008";
-		w_B <= x"0002";
+		w_B <= x"0008";
+		w_A <= x"0002";
 		w_sel_ula <= '0';
 		wait for 10 ns;
 		

@@ -1,5 +1,5 @@
 Flow report for CAMINHO_DADOS
-Fri Jul 22 11:27:32 2022
+Tue Jul 26 00:00:59 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Jul 22 11:27:32 2022       ;
+; Flow Status                        ; Successful - Tue Jul 26 00:00:58 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; CAMINHO_DADOS                               ;
 ; Top-level Entity Name              ; CAMINHO_DADOS                               ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C7G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 45                                          ;
-;     Total combinational functions  ; 45                                          ;
+; Total logic elements               ; 77                                          ;
+;     Total combinational functions  ; 77                                          ;
 ;     Dedicated logic registers      ; 16                                          ;
 ; Total registers                    ; 16                                          ;
-; Total pins                         ; 83                                          ;
+; Total pins                         ; 99                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/22/2022 11:27:22 ;
+; Start date & time ; 07/26/2022 00:00:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CAMINHO_DADOS       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 136935936943681.165850004209764        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 136935936943681.165880444126316        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -102,8 +102,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4806 MB             ; 00:00:25                           ;
-; Total                ; 00:00:10     ; --                      ; --                  ; 00:00:25                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4818 MB             ; 00:00:45                           ;
+; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:45                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

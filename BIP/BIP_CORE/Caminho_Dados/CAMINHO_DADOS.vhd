@@ -20,8 +20,8 @@ entity CAMINHO_DADOS is
 		i_rst				: in std_logic ;
 		o_opcode			: out std_logic_vector(3 downto 0);
 		o_address_ram	: out std_logic_vector((p_address_width-1) downto 0);
-		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0)
-
+		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0);
+		o_out_acc		:out std_logic_vector((p_data_width-1) downto 0)
 	);
 end CAMINHO_DADOS;
 ARCHITECTURE behavior of CAMINHO_DADOS IS
@@ -103,7 +103,7 @@ BEGIN
 
 	-- Mux da entrada 0 da ULA
 	with i_sel_op2 SELECT      -- expressao_escolha =
-		w_in_ula0 <= w_out_acc when '0',
+		w_in_ula0 <= i_dout_ram when '0',
 					w_expanded_out_ir when '1',
 					(others =>'0') when OTHERS;
 
@@ -113,6 +113,7 @@ BEGIN
 	w_in_ula1 <= w_out_acc;
 	o_din_ram <= w_out_acc;
 	o_address_ram <= w_address_ram;
+	o_out_acc <= w_out_acc;
 	
 	-----------------------------------------------------------------------------------------------
 	-- Atribuições de componentes

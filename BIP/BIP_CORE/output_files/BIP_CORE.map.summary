@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Jul 25 23:49:43 2022
+Analysis & Synthesis Status : Successful - Tue Jul 26 01:26:13 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : BIP_CORE
 Top-level Entity Name : BIP_CORE
 Family : MAX 10
-Total logic elements : 96
-    Total combinational functions : 96
+Total logic elements : 81
+    Total combinational functions : 81
     Dedicated logic registers : 28
 Total registers : 28
-Total pins : 86
+Total pins : 102
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

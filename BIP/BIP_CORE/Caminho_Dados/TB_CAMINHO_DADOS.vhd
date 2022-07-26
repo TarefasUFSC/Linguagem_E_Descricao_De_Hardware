@@ -26,7 +26,8 @@ architecture behavioral of TB_CAMINHO_DADOS is
 		i_rst				: in std_logic ;
 		o_opcode			: out std_logic_vector(3 downto 0);
 		o_address_ram	: out std_logic_vector((p_address_width-1) downto 0);
-		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0)
+		o_din_ram		: out std_logic_vector((p_data_width-1) downto 0);
+		o_out_acc		:out std_logic_vector((p_data_width-1) downto 0)
 
 	);
 	end component;
@@ -44,6 +45,7 @@ architecture behavioral of TB_CAMINHO_DADOS is
 	SIGNAL w_opcode		: std_logic_vector(3 downto 0);
 	SIGNAL w_address_ram	: std_logic_vector((p_address_width-1) downto 0);
 	SIGNAL w_din_ram		: std_logic_vector((p_data_width-1) downto 0);
+	SIGNAL w_out_acc		: std_logic_vector((p_data_width-1) downto 0);
 	
 begin
 
@@ -61,7 +63,8 @@ begin
 		i_rst =>w_rst,
 		o_opcode =>w_opcode,
 		o_address_ram =>w_address_ram,
-		o_din_ram =>w_din_ram
+		o_din_ram =>w_din_ram,
+		o_out_acc =>w_out_acc
 	);
 	
 
