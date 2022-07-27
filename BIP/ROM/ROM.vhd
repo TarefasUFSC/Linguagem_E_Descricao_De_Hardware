@@ -24,8 +24,26 @@ entity ROM is
 end ROM;
 
 architecture Behavioral of ROM is
-	type mem_type is array(i_add'range) of std_logic_vector(o_data'range);	
-	signal w_memoria_rom : mem_type;
+	type mem_type is array( 0 to (p_add_width*p_add_width-1)) of std_logic_vector(o_data'range);	
+	
+	signal w_memoria_rom : mem_type := (
+		x"3013",
+	   x"1000",
+	   x"300A",
+	   x"1001",
+	   x"8000",
+	   x"1002",
+	   x"2000",
+	   x"4002",
+	   x"1003",
+	   x"2000",
+	   x"6001",
+	   x"1004",
+	   x"2004",
+	   x"4002",
+	   x"1005",
+		others => x"0000"
+	);
 	
 	component ROM_INTEL_SREG
 		PORT

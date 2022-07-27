@@ -75,6 +75,9 @@ begin
 		wait for 15 ns	;
 		w_en <= '0';
 		w_add <= x"002";
+		wait for 15 ns	;
+		w_en <= '1';
+		w_add <= x"003";
 		wait;
 	end process;
 	

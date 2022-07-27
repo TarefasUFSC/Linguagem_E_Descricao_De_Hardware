@@ -13,7 +13,7 @@ STO  0x002 | 1002
 
 // Soma com os imediatos A+B = 1D 
 LD   0x000 | 2000
-ADD  0x001 | 4002
+ADD  0x001 | 4001
 STO  0x003 | 1003
 
 // SUB nnn significa ACC = ACC - nnn
