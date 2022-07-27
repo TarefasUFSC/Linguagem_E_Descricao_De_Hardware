@@ -37,7 +37,7 @@ BEGIN
 	
 	W_reduction2	<= W_A or W_B or W_C or W_D;
 	O_EN_PC 			<= W_reduction2;
-	o_EN_ROM			<= W_reduction2;
+	o_EN_ROM			<= '1';
 	
 	o_WR_ACC			<= W_A or W_B or W_C;
 	

@@ -59,7 +59,7 @@ begin
 
 	intel : if(p_tipo_memoria = "INTEL") generate	
 		U01 : ROM_INTEL_SREG PORT MAP (
-		address	=> i_add,
+		address		=> i_add,
 		clken	 	=> i_en,
 		clock	 	=> i_clk,
 		q			=> o_data

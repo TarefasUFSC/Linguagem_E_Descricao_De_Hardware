@@ -17,6 +17,9 @@ entity BIP_CORE is
 		o_address_rom : out std_logic_vector(p_address_width-1 downto 0);
 		o_address_ram : out std_logic_vector(p_address_width-1 downto 0);
 		o_din_ram: out std_logic_vector(p_data_width-1 downto 0);
+		o_wr_ram			: out std_logic;
+		o_en_rom			: out std_logic;
+		o_en_ram			: out std_logic;
 		o_out_acc : out std_logic_vector(p_data_width-1 downto 0)
 	);
 end BIP_CORE;
@@ -69,7 +72,9 @@ ARCHITECTURE behavior of BIP_CORE IS
 BEGIN
 	o_address_rom <= w_address_rom;
 	o_address_ram <= w_address_ram;
-
+	o_wr_ram <= w_wr_ram;
+	o_en_rom <= w_en_rom;
+	o_en_ram <= w_en_ram;
 	cam_controle: CAMINHO_CONTROLE
 	port map(
 			i_opcode		=>w_opcode ,
