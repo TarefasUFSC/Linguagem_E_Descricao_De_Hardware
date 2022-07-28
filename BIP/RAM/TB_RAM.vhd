@@ -87,7 +87,7 @@ begin
 		wait for 40 NS;
 		w_add 		<= x"000";
 		w_en 		<= '1';
-		w_wr 		<= '0';
+		w_wr 		<= '1';
 		w_i_data <= x"AA0F";
 		-- wait for 	40 NS;
 		-- w_en 		<= '0';
@@ -95,7 +95,7 @@ begin
 		
 		w_add 	<= x"001";
 		w_en 		<= '1';
-		w_wr 		<= '0';
+		w_wr 		<= '1';
 		w_i_data <= x"B00B";
 		-- wait for 	20 NS;
 		-- w_en 		<= '0';
@@ -103,14 +103,14 @@ begin
 		
 		w_add 	<= x"000";
 		w_en 		<= '1';
-		w_wr 		<= '1';
+		w_wr 		<= '0';
 		-- wait for 	20 NS;
 		-- w_en 		<= '0';
 		wait for 	20 NS;
 		
 		w_add 	<= x"001";
 		w_en 		<= '1';
-		w_wr 		<= '1';
+		w_wr 		<= '0';
 		-- wait for 	20 NS;
 		-- w_en 		<= '0';
 		wait for 	20 NS;

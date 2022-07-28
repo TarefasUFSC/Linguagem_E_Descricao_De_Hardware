@@ -63,7 +63,7 @@ BEGIN
 		address_aclr_a => "NONE",
 		clock_enable_input_a => "NORMAL",
 		clock_enable_output_a => "BYPASS",
-		init_file => "E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_MIF.mif",
+		init_file => "ROM_MIF.mif",
 		intended_device_family => "MAX 10",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",

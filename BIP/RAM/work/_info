@@ -41,7 +41,7 @@ R12
 !s100 ?2aWMG2OVM>EL:akN_ShJ1
 !i10b 1
 Eram
-Z13 w1658962893
+Z13 w1658968492
 Z14 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
 Z15 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 R2
@@ -54,7 +54,7 @@ L6
 VLkL3EXoIb;PXZkNXL2P4T1
 R7
 32
-Z18 !s108 1658962901.507000
+Z18 !s108 1658968528.510000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd|
 Z20 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd|
 R11
@@ -69,7 +69,7 @@ R3
 DEx4 work 3 ram 0 22 LkL3EXoIb;PXZkNXL2P4T1
 l76
 L39
-Vkd_WCi@f4`RG3@6Sn3C]P0
+Ve7M`0XBW?L6<E`2JU=JJ@0
 R7
 32
 R18
@@ -77,7 +77,7 @@ R19
 R20
 R11
 R12
-!s100 2JQkeMC16m0m6OFV0=CJ`1
+!s100 6GeBf<i6=@lk``6IC0PNS3
 !i10b 1
 Eram_sreg
 Z21 w1658952370
@@ -94,7 +94,7 @@ V@XAcIHN[J7C>`aNRD8h7B0
 R7
 32
 !i10b 1
-Z24 !s108 1658962901.768000
+Z24 !s108 1658968528.669000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM_SREG.vhd|
 Z26 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM_SREG.vhd|
 R11
@@ -117,7 +117,7 @@ R26
 R11
 R12
 Etb_ram
-Z30 w1658962262
+Z30 w1658968522
 Z31 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 R15
 R2
@@ -130,7 +130,7 @@ L6
 Vl7z_RJiX1TjmggZFQ6iZ63
 R7
 32
-Z34 !s108 1658962901.232000
+Z34 !s108 1658968528.246000
 Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/TB_RAM.vhd|
 Z36 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/TB_RAM.vhd|
 R11
@@ -145,7 +145,7 @@ R3
 DEx4 work 6 tb_ram 0 22 l7z_RJiX1TjmggZFQ6iZ63
 l47
 L15
-VeCchP0S_Md^0eHmS8^R[e3
+VIicT^jPW4ZDIRXS]jZo2`0
 R7
 32
 R34
@@ -153,5 +153,5 @@ R35
 R36
 R11
 R12
-!s100 0h2U>_o[=L]7G=TCV9R^a1
+!s100 g3=>QNYBh6X`9NT=l=3kf3
 !i10b 1
