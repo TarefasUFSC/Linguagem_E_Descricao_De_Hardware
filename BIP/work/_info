@@ -17,7 +17,7 @@ L6
 VB``3j:V_NDjm__VC;eQ`73
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1659020866.045000
+Z9 !s108 1659049958.292000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd|
 Z11 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -56,7 +56,7 @@ L6
 V]nfkdP22gL2D0QZRi>ae]0
 R8
 32
-Z17 !s108 1659020865.616000
+Z17 !s108 1659049957.896000
 Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd|
 Z19 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd|
 R12
@@ -95,7 +95,7 @@ L6
 VBFI?SGL>VK<cZMo4cabGb1
 R8
 32
-Z23 !s108 1659020866.226000
+Z23 !s108 1659049958.485000
 Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd|
 Z25 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd|
 R12
@@ -121,7 +121,7 @@ R13
 !s100 CHdWkPB^j=JSo;MWhC9UA0
 !i10b 1
 Ebip
-Z26 w1659020640
+Z26 w1659049951
 R1
 R2
 R3
@@ -136,7 +136,7 @@ V@DnWe86@LEXAco5cIDIia3
 R8
 32
 !i10b 1
-Z29 !s108 1659020867.262000
+Z29 !s108 1659049959.473000
 Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd|
 Z31 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd|
 R12
@@ -149,8 +149,8 @@ R4
 Z32 DEx4 work 3 bip 0 22 @DnWe86@LEXAco5cIDIia3
 l95
 L22
-VKNCPUdX:lVdan:dn2ONF60
-!s100 O?@><VR=Wbz_=z_A8A@<U3
+VCfIcP4JU6eVmI:7g8Qa>F1
+!s100 EQ5W<eo8H^D_UNF?k1ggn3
 R8
 32
 !i10b 1
@@ -173,7 +173,7 @@ L6
 VPjh24]e<iRWJ6SW76XUbA0
 R8
 32
-Z36 !s108 1659020867.037000
+Z36 !s108 1659049959.287000
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd|
 Z38 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd|
 R12
@@ -212,7 +212,7 @@ L6
 VXd;hDR^kB4GnH:j;I_g@62
 R8
 32
-Z42 !s108 1659020866.402000
+Z42 !s108 1659049958.705000
 Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd|
 Z44 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd|
 R12
@@ -251,7 +251,7 @@ L6
 V<BHRCMzW5L0kaHUP6?]hZ1
 R8
 32
-Z48 !s108 1659020866.582000
+Z48 !s108 1659049958.908000
 Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd|
 Z50 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd|
 R12
@@ -290,7 +290,7 @@ L6
 VElXT4I5^mfO:Oi6TQJE_S3
 R8
 32
-Z54 !s108 1659020866.806000
+Z54 !s108 1659049959.095000
 Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
 Z56 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd|
 R12
@@ -329,7 +329,7 @@ L6
 VMR^?h9[<4CnHJ]m^0HgXO2
 R8
 32
-Z60 !s108 1659020865.871000
+Z60 !s108 1659049958.093000
 Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd|
 Z62 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd|
 R12
@@ -367,7 +367,7 @@ L43
 V7Z]:jamZPZ]JG_kJ6V6T`0
 R8
 32
-Z67 !s108 1659020864.756000
+Z67 !s108 1659049957.357000
 Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd|
 Z69 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd|
 R12
@@ -392,7 +392,7 @@ R13
 !s100 ?2aWMG2OVM>EL:akN_ShJ1
 !i10b 1
 Eram
-Z70 w1658968492
+Z70 w1659049595
 Z71 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
 R2
 R3
@@ -405,7 +405,7 @@ L6
 VLkL3EXoIb;PXZkNXL2P4T1
 R8
 32
-Z74 !s108 1659020865.358000
+Z74 !s108 1659049957.704000
 Z75 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd|
 Z76 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd|
 R12
@@ -420,7 +420,7 @@ R4
 DEx4 work 3 ram 0 22 LkL3EXoIb;PXZkNXL2P4T1
 l76
 L39
-Ve7M`0XBW?L6<E`2JU=JJ@0
+Vh_R4I4bJO=8:j]L=7mcLU0
 R8
 32
 R74
@@ -428,7 +428,7 @@ R75
 R76
 R12
 R13
-!s100 6GeBf<i6=@lk``6IC0PNS3
+!s100 D4:oLBc1ea0f36JCd4:XU3
 !i10b 1
 Erom
 Z77 w1658941766
@@ -444,7 +444,7 @@ L6
 V9>OJL14VWdLaaWfN5zHO12
 R8
 32
-Z80 !s108 1659020865.065000
+Z80 !s108 1659049957.539000
 Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM.vhd|
 Z82 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM.vhd|
 R12
@@ -482,7 +482,7 @@ L43
 V_OnMhinR[CL^bHabf8KGG3
 R8
 32
-Z86 !s108 1659020864.459000
+Z86 !s108 1659049957.164000
 Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd|
 Z88 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd|
 R12
@@ -520,7 +520,7 @@ L6
 VW6BWD4AcU@jXi=c0g`GRJ3
 R8
 32
-Z92 !s108 1659020864.282000
+Z92 !s108 1659049956.995000
 Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/TB_BIP.vhd|
 Z94 !s107 E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/TB_BIP.vhd|
 R12
