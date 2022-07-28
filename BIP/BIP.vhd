@@ -112,7 +112,7 @@ BEGIN
 	end generate exp_i;
 	U_RAM: RAM
 	port map(
-		i_clk 					=> w_clk_pll,
+		i_clk 					=> i_clk, -- trocar caso usar o PLL
 		i_data 					=> w_din_ram,
 		i_wr					=> w_wr_ram,
 		i_en 					=> w_en_ram,
@@ -123,7 +123,7 @@ BEGIN
 	U_ROM: ROM
 	port map(
 		-- Só lembra que aqui a seta é: pino_do_componente =>  w_x equivalente
-		i_clk 					=> w_clk_pll,
+		i_clk 					=> i_clk, -- trocar caso usar o PLL
 		i_en 					=> w_en_rom,
 		i_add 					=> w_add_rom,
 		o_data 					=> w_dout_rom
@@ -136,8 +136,8 @@ BEGIN
 			-- Só lembra que aqui a seta é: pino_do_componente =>  w_x equivalente
 			i_dout_rom 				=> w_dout_rom ,
 			i_dout_ram 				=> w_dout_ram ,
-			i_clk 					=> w_clk_pll,
-			i_rst 					=> w_rst_bip,
+			i_clk 					=> i_clk, -- trocar caso usar o pll
+			i_rst 					=> w_rst ,
 			i_switches 				=> i_switches ,
 			o_address_rom 			=> w_add_rom ,
 			o_address_ram 			=> w_add_ram ,
