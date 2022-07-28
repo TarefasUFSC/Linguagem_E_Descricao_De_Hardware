@@ -10,13 +10,13 @@ entity BIP is
 		p_add_width 			: integer := 12
 	);
 	port(
-		i_clk 					: in std_logic; -- remover depois que criar o pll
+		i_clk 					: in std_logic;
 		i_switches 				: in std_logic_vector(p_add_width-1 downto 0);
 		-- i_add_tst				: in std_logic_vector(p_add_width-1 downto 0);
 		-- i_wr_ram 				: in std_logic;
 		-- i_en_ram 				: in std_logic;
 		-- i_en_rom 				: in std_logic;
-		i_rst 					: in std_logic -- remover depois que criar o pll
+		i_rst 					: in std_logic 
 	);
 end BIP;
 ARCHITECTURE behavior of BIP IS
@@ -24,7 +24,10 @@ ARCHITECTURE behavior of BIP IS
 	signal w_wr_ram 			: std_logic := '0';
 	signal w_en_ram 			: std_logic := '1';
 	signal w_en_rom 			: std_logic := '1';
+	signal w_rst_pll	 		: std_logic ;
 	signal w_rst	 			: std_logic ;
+	signal w_rst_bip 			: std_logic ;
+	signal w_clk_pll 			: std_logic ;
 	signal w_add_ram 			: std_logic_vector(p_add_width-1 downto 0);
 	signal w_add_rom 			: std_logic_vector(p_add_width-1 downto 0);
 	signal w_switches 			: std_logic_vector(p_add_width-1 downto 0);
@@ -81,9 +84,17 @@ ARCHITECTURE behavior of BIP IS
 			o_out_acc 			: out std_logic_vector(p_data_width-1 downto 0)
 		);
 	end component;
+	component PLL is
+		port(
+			i_clk		: in std_logic;
+			i_rst		: in std_logic;
+			o_clk		: out std_logic;
+			o_locked	: out std_logic
+		);
+	end component;
 BEGIN
 	
-	w_rst <= not i_rst;
+	
 	
 	-- tst_m : if(mode = "tst") generate	
 	-- 	w_en_rom <= i_en_rom;
@@ -92,6 +103,7 @@ BEGIN
 	-- 	w_add_rom <= i_add_tst;
 	-- 	w_add_ram <= i_add_tst;
 	-- 	w_din_ram <= w_dout_rom;
+	--  w_rst <= not i_rst;
 	-- end generate;
 
 
@@ -100,7 +112,7 @@ BEGIN
 	end generate exp_i;
 	U_RAM: RAM
 	port map(
-		i_clk 					=> i_clk,
+		i_clk 					=> w_clk_pll,
 		i_data 					=> w_din_ram,
 		i_wr					=> w_wr_ram,
 		i_en 					=> w_en_ram,
@@ -111,19 +123,21 @@ BEGIN
 	U_ROM: ROM
 	port map(
 		-- Só lembra que aqui a seta é: pino_do_componente =>  w_x equivalente
-		i_clk 					=> i_clk,
+		i_clk 					=> w_clk_pll,
 		i_en 					=> w_en_rom,
 		i_add 					=> w_add_rom,
 		o_data 					=> w_dout_rom
 	);
 	fpga_m : if(mode = "fpga") generate
+		w_rst <= not i_rst;
+		w_rst_bip <= not w_rst_pll;
 		U_CORE: BIP_CORE
 		port map(
 			-- Só lembra que aqui a seta é: pino_do_componente =>  w_x equivalente
 			i_dout_rom 				=> w_dout_rom ,
 			i_dout_ram 				=> w_dout_ram ,
-			i_clk 					=> i_clk,
-			i_rst 					=> w_rst,
+			i_clk 					=> w_clk_pll,
+			i_rst 					=> w_rst_bip,
 			i_switches 				=> i_switches ,
 			o_address_rom 			=> w_add_rom ,
 			o_address_ram 			=> w_add_ram ,
@@ -133,5 +147,14 @@ BEGIN
 			o_en_ram				=> w_en_ram,
 			o_out_acc 				=> w_out_acc 
 		);
+		u_pll: PLL
+		port map(
+			i_clk 					=> i_clk,
+			i_rst 					=> w_rst,
+			o_clk 					=> w_clk_pll,
+			o_locked 				=> w_rst_pll
+		);
 	end generate;
+
+	
 END behavior;

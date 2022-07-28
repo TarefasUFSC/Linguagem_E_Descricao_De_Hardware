@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RAM
-Wed Jul 27 17:03:06 2022
+Thu Jul 28 14:21:57 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,15 +10,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: Top-level Entity: |RAM
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -45,22 +37,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 27 17:03:06 2022       ;
+; Analysis & Synthesis Status        ; Failed - Thu Jul 28 14:21:57 2022           ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; RAM                                         ;
 ; Top-level Entity Name              ; RAM                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 348                                         ;
-;     Total combinational functions  ; 156                                         ;
-;     Dedicated logic registers      ; 208                                         ;
-; Total registers                    ; 208                                         ;
-; Total pins                         ; 48                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -159,126 +151,11 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; RAM.vhd                          ; yes             ; User VHDL File  ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 348         ;
-;                                             ;             ;
-; Total combinational functions               ; 156         ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 139         ;
-;     -- 3 input functions                    ; 17          ;
-;     -- <=2 input functions                  ; 0           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 156         ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 208         ;
-;     -- Dedicated logic registers            ; 208         ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 48          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; i_clk~input ;
-; Maximum fan-out                             ; 208         ;
-; Total fan-out                               ; 1295        ;
-; Average fan-out                             ; 2.82        ;
-+---------------------------------------------+-------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |RAM                       ; 156 (156)           ; 208 (208)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |RAM                ; RAM         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 208   ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 208   ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |RAM|o_data[0]~reg0        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |RAM ;
-+----------------+-----------+----------------------------------------+
-; Parameter Name ; Value     ; Type                                   ;
-+----------------+-----------+----------------------------------------+
-; p_tipo_memoria ; BL_LOGICO ; String                                 ;
-; p_data_width   ; 16        ; Signed Integer                         ;
-; p_add_width    ; 12        ; Signed Integer                         ;
-+----------------+-----------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 48                          ;
-; cycloneiii_ff         ; 208                         ;
-;     ENA               ; 208                         ;
-; cycloneiii_lcell_comb ; 156                         ;
-;     normal            ; 156                         ;
-;         3 data inputs ; 17                          ;
-;         4 data inputs ; 139                         ;
-;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 3.01                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:03     ;
-+----------------+--------------+
 
 
 +-------------------------------+
@@ -287,7 +164,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Jul 27 17:02:28 2022
+    Info: Processing started: Thu Jul 28 14:21:38 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RAM -c RAM
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -304,28 +181,33 @@ Info (12021): Found 2 design units, including 1 entities, in source file ram_sre
     Info (12022): Found design unit 1: ram_sreg-SYN File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM_SREG.vhd Line: 57
     Info (12023): Found entity 1: RAM_SREG File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM_SREG.vhd Line: 43
 Info (12127): Elaborating entity "RAM" for the top level hierarchy
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "w_memoria_ram" is uninferred due to asynchronous read logic File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 41
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_add[4]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[5]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[6]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[7]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[8]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[9]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[10]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-    Warning (15610): No output dependent on input pin "i_add[11]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 29
-Info (21057): Implemented 396 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 32 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 348 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4817 megabytes
-    Info: Processing ended: Wed Jul 27 17:03:06 2022
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:53
+Error (10818): Can't infer register for "o_data[0]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[1]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[2]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[3]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[4]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[5]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[6]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[7]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[8]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[9]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[10]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[11]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[12]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[13]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[14]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[15]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "w_memoria_ram[0][0]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][0]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (10818): Can't infer register for "w_memoria_ram[0][1]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][1]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (10818): Can't infer register for "w_memoria_ram[0][2]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][2]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 1 warning
+    Error: Peak virtual memory: 4854 megabytes
+    Error: Processing ended: Thu Jul 28 14:21:58 2022
+    Error: Elapsed time: 00:00:20
+    Error: Total CPU time (on all processors): 00:00:46
 
 

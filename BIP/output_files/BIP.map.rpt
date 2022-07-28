@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BIP
-Wed Jul 27 10:30:59 2022
+Thu Jul 28 12:05:49 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -10,34 +10,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. Removed Registers Triggering Further Register Optimizations
- 10. General Register Statistics
- 11. Source assignments for RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated
- 12. Source assignments for ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated
- 13. Parameter Settings for User Entity Instance: Top-level Entity: |BIP
- 14. Parameter Settings for User Entity Instance: RAM:U_RAM
- 15. Parameter Settings for User Entity Instance: RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: ROM:U_ROM
- 17. Parameter Settings for User Entity Instance: ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE
- 19. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle
- 20. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter
- 21. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados
- 22. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ALU:uni_logica_arit
- 23. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ACC:acumulador
- 24. Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|INSTRUCTION_REGISTER:registrador_instrucao
- 25. altsyncram Parameter Settings by Entity Instance
- 26. Port Connectivity Checks: "BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle"
- 27. Port Connectivity Checks: "BIP_CORE:U_CORE"
- 28. Port Connectivity Checks: "ROM:U_ROM"
- 29. Port Connectivity Checks: "RAM:U_RAM"
- 30. Post-Synthesis Netlist Statistics for Top Partition
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -64,22 +37,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jul 27 10:30:59 2022       ;
+; Analysis & Synthesis Status        ; Failed - Thu Jul 28 12:05:49 2022           ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; BIP                                         ;
 ; Top-level Entity Name              ; BIP                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 14                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -185,471 +158,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                 ;
-+------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                                             ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                                                       ; Library ;
-+------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ROM/ROM_INTEL_SREG.vhd                                                       ; yes             ; User Wizard-Generated File             ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd                                                ;         ;
-; ROM/ROM.vhd                                                                  ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM.vhd                                                           ;         ;
-; RAM/RAM.vhd                                                                  ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd                                                           ;         ;
-; RAM/MEMORIA_INTEL.vhd                                                        ; yes             ; User Wizard-Generated File             ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd                                                 ;         ;
-; BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd                                     ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd                              ;         ;
-; BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd        ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/registrador_instrucao/INSTRUCTION_REGISTER.vhd ;         ;
-; BIP_CORE/Caminho_Dados/ALU/ALU.vhd                                           ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/ALU/ALU.vhd                                    ;         ;
-; BIP_CORE/Caminho_Dados/acumulador/ACC.vhd                                    ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/acumulador/ACC.vhd                             ;         ;
-; BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd                               ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd                        ;         ;
-; BIP_CORE/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd                ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Logica_Controle/LOGICA_CONTROLE.vhd         ;         ;
-; BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd                ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd         ;         ;
-; BIP_CORE/BIP_CORE.vhd                                                        ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd                                                 ;         ;
-; BIP.vhd                                                                      ; yes             ; User VHDL File                         ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd                                                               ;         ;
-; altsyncram.tdf                                                               ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf                                                 ;         ;
-; stratix_ram_block.inc                                                        ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                          ;         ;
-; lpm_mux.inc                                                                  ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_mux.inc                                                    ;         ;
-; lpm_decode.inc                                                               ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/lpm_decode.inc                                                 ;         ;
-; aglobal211.inc                                                               ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc                                                 ;         ;
-; a_rdenreg.inc                                                                ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                  ;         ;
-; altrom.inc                                                                   ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altrom.inc                                                     ;         ;
-; altram.inc                                                                   ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altram.inc                                                     ;         ;
-; altdpram.inc                                                                 ; yes             ; Megafunction                           ; e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altdpram.inc                                                   ;         ;
-; db/altsyncram_74q3.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf                                                ;         ;
-; db/altsyncram_1c24.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf                                                ;         ;
-; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_MIF.mif ; yes             ; Auto-Found Memory Initialization File  ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_MIF.mif                                                       ;         ;
-+------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------+
-
-
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 14    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; i_clk ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 14    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |BIP                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 14   ; 0            ; 0          ; |BIP                ; BIP         ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                              ;
-+--------------------------------------------------------------------------------------------+--------------------+
-; Register name                                                                              ; Reason for Removal ;
-+--------------------------------------------------------------------------------------------+--------------------+
-; BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ACC:acumulador|o_DATA[0..15]                       ; Lost fanout        ;
-; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[0..11] ; Lost fanout        ;
-; Total Number of Removed Registers = 28                                                     ;                    ;
-+--------------------------------------------------------------------------------------------+--------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                      ;
-+-------------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------+
-; Register name                                                     ; Reason for Removal ; Registers Removed due to This Register                                                  ;
-+-------------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------+
-; BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ACC:acumulador|o_DATA[15] ; Lost Fanouts       ; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[4], ;
-;                                                                   ;                    ; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[3], ;
-;                                                                   ;                    ; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[2], ;
-;                                                                   ;                    ; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[1], ;
-;                                                                   ;                    ; BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter|w_address[0]  ;
-+-------------------------------------------------------------------+--------------------+-----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated ;
-+---------------------------------+--------------------+------+------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                         ;
-+---------------------------------+--------------------+------+------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                          ;
-+---------------------------------+--------------------+------+------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                          ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                           ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |BIP ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; p_data_width   ; 16    ; Signed Integer                             ;
-; p_add_width    ; 12    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: RAM:U_RAM ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; p_tipo_memoria ; INTEL ; String                        ;
-; p_data_width   ; 16    ; Signed Integer                ;
-; p_add_width    ; 12    ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-----------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                ;
-+------------------------------------+----------------------+-----------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                             ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                          ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                        ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                        ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                      ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                             ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                                             ;
-; WIDTH_A                            ; 16                   ; Signed Integer                                      ;
-; WIDTHAD_A                          ; 12                   ; Signed Integer                                      ;
-; NUMWORDS_A                         ; 4096                 ; Signed Integer                                      ;
-; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                                             ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                             ;
-; OUTDATA_ACLR_A                     ; CLEAR0               ; Untyped                                             ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                             ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                             ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                             ;
-; WIDTH_B                            ; 1                    ; Signed Integer                                      ;
-; WIDTHAD_B                          ; 1                    ; Signed Integer                                      ;
-; NUMWORDS_B                         ; 0                    ; Signed Integer                                      ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                                             ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                             ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                             ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                             ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                             ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                             ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                             ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                             ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                             ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                             ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                             ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                      ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                      ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                             ;
-; BYTE_SIZE                          ; 8                    ; Signed Integer                                      ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                             ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                             ;
-; INIT_FILE                          ; UNUSED               ; Untyped                                             ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                             ;
-; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                                      ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                             ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                             ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                             ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                             ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                             ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                             ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                             ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                             ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                                      ;
-; DEVICE_FAMILY                      ; MAX 10               ; Untyped                                             ;
-; CBXI_PARAMETER                     ; altsyncram_74q3      ; Untyped                                             ;
-+------------------------------------+----------------------+-----------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ROM:U_ROM ;
-+----------------+-------+-------------------------------+
-; Parameter Name ; Value ; Type                          ;
-+----------------+-------+-------------------------------+
-; p_tipo_memoria ; INTEL ; String                        ;
-; p_data_width   ; 16    ; Signed Integer                ;
-; p_add_width    ; 12    ; Signed Integer                ;
-+----------------+-------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component                   ;
-+------------------------------------+------------------------------------------------------------------------------+----------------+
-; Parameter Name                     ; Value                                                                        ; Type           ;
-+------------------------------------+------------------------------------------------------------------------------+----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                                                            ; Untyped        ;
-; AUTO_CARRY_CHAINS                  ; ON                                                                           ; AUTO_CARRY     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                                                          ; IGNORE_CARRY   ;
-; AUTO_CASCADE_CHAINS                ; ON                                                                           ; AUTO_CASCADE   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                                                          ; IGNORE_CASCADE ;
-; WIDTH_BYTEENA                      ; 1                                                                            ; Untyped        ;
-; OPERATION_MODE                     ; ROM                                                                          ; Untyped        ;
-; WIDTH_A                            ; 16                                                                           ; Signed Integer ;
-; WIDTHAD_A                          ; 12                                                                           ; Signed Integer ;
-; NUMWORDS_A                         ; 4096                                                                         ; Signed Integer ;
-; OUTDATA_REG_A                      ; UNREGISTERED                                                                 ; Untyped        ;
-; ADDRESS_ACLR_A                     ; NONE                                                                         ; Untyped        ;
-; OUTDATA_ACLR_A                     ; NONE                                                                         ; Untyped        ;
-; WRCONTROL_ACLR_A                   ; NONE                                                                         ; Untyped        ;
-; INDATA_ACLR_A                      ; NONE                                                                         ; Untyped        ;
-; BYTEENA_ACLR_A                     ; NONE                                                                         ; Untyped        ;
-; WIDTH_B                            ; 1                                                                            ; Signed Integer ;
-; WIDTHAD_B                          ; 1                                                                            ; Signed Integer ;
-; NUMWORDS_B                         ; 0                                                                            ; Signed Integer ;
-; INDATA_REG_B                       ; CLOCK1                                                                       ; Untyped        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                                       ; Untyped        ;
-; RDCONTROL_REG_B                    ; CLOCK1                                                                       ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                                                       ; Untyped        ;
-; OUTDATA_REG_B                      ; UNREGISTERED                                                                 ; Untyped        ;
-; BYTEENA_REG_B                      ; CLOCK1                                                                       ; Untyped        ;
-; INDATA_ACLR_B                      ; NONE                                                                         ; Untyped        ;
-; WRCONTROL_ACLR_B                   ; NONE                                                                         ; Untyped        ;
-; ADDRESS_ACLR_B                     ; NONE                                                                         ; Untyped        ;
-; OUTDATA_ACLR_B                     ; NONE                                                                         ; Untyped        ;
-; RDCONTROL_ACLR_B                   ; NONE                                                                         ; Untyped        ;
-; BYTEENA_ACLR_B                     ; NONE                                                                         ; Untyped        ;
-; WIDTH_BYTEENA_A                    ; 1                                                                            ; Signed Integer ;
-; WIDTH_BYTEENA_B                    ; 1                                                                            ; Signed Integer ;
-; RAM_BLOCK_TYPE                     ; M9K                                                                          ; Untyped        ;
-; BYTE_SIZE                          ; 8                                                                            ; Signed Integer ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                    ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                                         ; Untyped        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                                         ; Untyped        ;
-; INIT_FILE                          ; E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_MIF.mif ; Untyped        ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                                                       ; Untyped        ;
-; MAXIMUM_DEPTH                      ; 0                                                                            ; Signed Integer ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                                                       ; Untyped        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                                       ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                                       ; Untyped        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                                       ; Untyped        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                                              ; Untyped        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                                              ; Untyped        ;
-; ENABLE_ECC                         ; FALSE                                                                        ; Untyped        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                                        ; Untyped        ;
-; WIDTH_ECCSTATUS                    ; 3                                                                            ; Signed Integer ;
-; DEVICE_FAMILY                      ; MAX 10                                                                       ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_1c24                                                              ; Untyped        ;
-+------------------------------------+------------------------------------------------------------------------------+----------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE ;
-+-----------------+-------+------------------------------------+
-; Parameter Name  ; Value ; Type                               ;
-+-----------------+-------+------------------------------------+
-; p_address_width ; 12    ; Signed Integer                     ;
-; p_data_width    ; 16    ; Signed Integer                     ;
-+-----------------+-------+------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle ;
-+-----------------+-------+------------------------------------------------------------------+
-; Parameter Name  ; Value ; Type                                                             ;
-+-----------------+-------+------------------------------------------------------------------+
-; p_data_width    ; 16    ; Signed Integer                                                   ;
-; p_address_width ; 12    ; Signed Integer                                                   ;
-+-----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter ;
-+-----------------+-------+----------------------------------------------------------------------------------------------+
-; Parameter Name  ; Value ; Type                                                                                         ;
-+-----------------+-------+----------------------------------------------------------------------------------------------+
-; p_data_width    ; 16    ; Signed Integer                                                                               ;
-; p_address_width ; 12    ; Signed Integer                                                                               ;
-+-----------------+-------+----------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados ;
-+-----------------+-------+------------------------------------------------------------+
-; Parameter Name  ; Value ; Type                                                       ;
-+-----------------+-------+------------------------------------------------------------+
-; p_data_width    ; 16    ; Signed Integer                                             ;
-; p_address_width ; 12    ; Signed Integer                                             ;
-+-----------------+-------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ALU:uni_logica_arit ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; p_data_width   ; 16    ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ACC:acumulador ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; p_data_width   ; 16    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|INSTRUCTION_REGISTER:registrador_instrucao ;
-+----------------+-------+--------------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                                   ;
-+----------------+-------+--------------------------------------------------------------------------------------------------------+
-; p_data_width   ; 16    ; Signed Integer                                                                                         ;
-; p_add_width    ; 12    ; Signed Integer                                                                                         ;
-+----------------+-------+--------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                                                ;
-+-------------------------------------------+---------------------------------------------------------------------+
-; Name                                      ; Value                                                               ;
-+-------------------------------------------+---------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                   ;
-; Entity Instance                           ; RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component  ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                                         ;
-;     -- WIDTH_A                            ; 16                                                                  ;
-;     -- NUMWORDS_A                         ; 4096                                                                ;
-;     -- OUTDATA_REG_A                      ; CLOCK0                                                              ;
-;     -- WIDTH_B                            ; 1                                                                   ;
-;     -- NUMWORDS_B                         ; 0                                                                   ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                              ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                        ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                           ;
-; Entity Instance                           ; ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                                                 ;
-;     -- WIDTH_A                            ; 16                                                                  ;
-;     -- NUMWORDS_A                         ; 4096                                                                ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                        ;
-;     -- WIDTH_B                            ; 1                                                                   ;
-;     -- NUMWORDS_B                         ; 0                                                                   ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                              ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                        ;
-;     -- RAM_BLOCK_TYPE                     ; M9K                                                                 ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                           ;
-+-------------------------------------------+---------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle"                                          ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; o_en_ram ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_wr_ram ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; o_en_rom ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BIP_CORE:U_CORE"                                                                          ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; i_switches ; Input  ; Info     ; Stuck at GND                                                                        ;
-; o_out_acc  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+----------------------------------------+
-; Port Connectivity Checks: "ROM:U_ROM"  ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; i_en ; Input ; Info     ; Stuck at VCC ;
-+------+-------+----------+--------------+
-
-
-+----------------------------------------+
-; Port Connectivity Checks: "RAM:U_RAM"  ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; i_wr ; Input ; Info     ; Stuck at GND ;
-; i_en ; Input ; Info     ; Stuck at VCC ;
-+------+-------+----------+--------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-------------------+---------------------------------+
-; Type              ; Count                           ;
-+-------------------+---------------------------------+
-; boundary_port     ; 14                              ;
-;                   ;                                 ;
-; Max LUT depth     ; 0.00                            ;
-; Average LUT depth ; 0.00                            ;
-+-------------------+---------------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Wed Jul 27 10:30:37 2022
+    Info: Processing started: Thu Jul 28 12:05:22 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BIP -c BIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file pll/pll_intel.vhd
+    Info (12022): Found design unit 1: pll_intel-SYN File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/PLL/PLL_INTEL.vhd Line: 54
+    Info (12023): Found entity 1: PLL_INTEL File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/PLL/PLL_INTEL.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file pll/pll.vhd
+    Info (12022): Found design unit 1: PLL-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/PLL/PLL.vhd Line: 14
+    Info (12023): Found entity 1: PLL File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/PLL/PLL.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file rom/rom_intel_sreg.vhd
     Info (12022): Found design unit 1: rom_intel_sreg-SYN File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd Line: 54
     Info (12023): Found entity 1: ROM_INTEL_SREG File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd Line: 43
@@ -684,208 +208,45 @@ Info (12021): Found 2 design units, including 1 entities, in source file bip_cor
     Info (12022): Found design unit 1: ADDRESS_COUNTER-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd Line: 19
     Info (12023): Found entity 1: ADDRESS_COUNTER File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file bip_core/bip_core.vhd
-    Info (12022): Found design unit 1: BIP_CORE-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 23
+    Info (12022): Found design unit 1: BIP_CORE-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 26
     Info (12023): Found entity 1: BIP_CORE File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file bip.vhd
-    Info (12022): Found design unit 1: BIP-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 18
+    Info (12022): Found design unit 1: BIP-behavior File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 22
     Info (12023): Found entity 1: BIP File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file tb_bip.vhd
     Info (12022): Found design unit 1: TB_BIP-behavioral File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/TB_BIP.vhd Line: 13
     Info (12023): Found entity 1: TB_BIP File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/TB_BIP.vhd Line: 6
 Info (12127): Elaborating entity "BIP" for the top level hierarchy
-Warning (10540): VHDL Signal Declaration warning at BIP.vhd(20): used explicit default value for signal "w_wr_ram" because signal was never assigned a value File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 20
-Warning (10540): VHDL Signal Declaration warning at BIP.vhd(21): used explicit default value for signal "w_en_ram" because signal was never assigned a value File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 21
-Warning (10540): VHDL Signal Declaration warning at BIP.vhd(22): used explicit default value for signal "w_en_rom" because signal was never assigned a value File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 22
-Warning (10036): Verilog HDL or VHDL warning at BIP.vhd(29): object "w_out_acc" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 29
-Warning (10873): Using initial value X (don't care) for net "w_switches[9..0]" at BIP.vhd(26) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 26
-Info (12128): Elaborating entity "RAM" for hierarchy "RAM:U_RAM" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 84
-Info (12128): Elaborating entity "MEMORIA_INTEL" for hierarchy "RAM:U_RAM|MEMORIA_INTEL:\intel:U01" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 76
-Info (12128): Elaborating entity "altsyncram" for hierarchy "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
-Info (12130): Elaborated megafunction instantiation "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
-Info (12133): Instantiated megafunction "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component" with the following parameter: File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/MEMORIA_INTEL.vhd Line: 64
-    Info (12134): Parameter "address_aclr_a" = "UNUSED"
-    Info (12134): Parameter "address_aclr_b" = "NONE"
-    Info (12134): Parameter "address_reg_b" = "CLOCK1"
-    Info (12134): Parameter "byte_size" = "8"
-    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
-    Info (12134): Parameter "byteena_aclr_b" = "NONE"
-    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
-    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
-    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_a" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
-    Info (12134): Parameter "intended_device_family" = "MAX 10"
-    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
-    Info (12134): Parameter "enable_ecc" = "FALSE"
-    Info (12134): Parameter "implement_in_les" = "OFF"
-    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
-    Info (12134): Parameter "indata_aclr_b" = "NONE"
-    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "UNUSED"
-    Info (12134): Parameter "init_file_layout" = "PORT_A"
-    Info (12134): Parameter "maximum_depth" = "0"
-    Info (12134): Parameter "numwords_a" = "4096"
-    Info (12134): Parameter "numwords_b" = "0"
-    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
-    Info (12134): Parameter "outdata_aclr_a" = "CLEAR0"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
-    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "ram_block_type" = "AUTO"
-    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
-    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
-    Info (12134): Parameter "width_a" = "16"
-    Info (12134): Parameter "width_b" = "1"
-    Info (12134): Parameter "width_byteena_a" = "1"
-    Info (12134): Parameter "width_byteena_b" = "1"
-    Info (12134): Parameter "width_eccstatus" = "3"
-    Info (12134): Parameter "widthad_a" = "12"
-    Info (12134): Parameter "widthad_b" = "1"
-    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
-    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_74q3.tdf
-    Info (12023): Found entity 1: altsyncram_74q3 File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_74q3" for hierarchy "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated" File: e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "ROM" for hierarchy "ROM:U_ROM" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 94
-Info (12128): Elaborating entity "ROM_INTEL_SREG" for hierarchy "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM.vhd Line: 61
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd Line: 61
-Info (12130): Elaborated megafunction instantiation "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd Line: 61
-Info (12133): Instantiated megafunction "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component" with the following parameter: File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_INTEL_SREG.vhd Line: 61
-    Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "address_aclr_b" = "NONE"
-    Info (12134): Parameter "address_reg_b" = "CLOCK1"
-    Info (12134): Parameter "byte_size" = "8"
-    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
-    Info (12134): Parameter "byteena_aclr_b" = "NONE"
-    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
-    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
-    Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
-    Info (12134): Parameter "clock_enable_input_b" = "NORMAL"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_b" = "NORMAL"
-    Info (12134): Parameter "intended_device_family" = "MAX 10"
-    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
-    Info (12134): Parameter "enable_ecc" = "FALSE"
-    Info (12134): Parameter "implement_in_les" = "OFF"
-    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
-    Info (12134): Parameter "indata_aclr_b" = "NONE"
-    Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/ROM/ROM_MIF.mif"
-    Info (12134): Parameter "init_file_layout" = "PORT_A"
-    Info (12134): Parameter "maximum_depth" = "0"
-    Info (12134): Parameter "numwords_a" = "4096"
-    Info (12134): Parameter "numwords_b" = "0"
-    Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "ram_block_type" = "M9K"
-    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
-    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "DONT_CARE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
-    Info (12134): Parameter "width_a" = "16"
-    Info (12134): Parameter "width_b" = "1"
-    Info (12134): Parameter "width_byteena_a" = "1"
-    Info (12134): Parameter "width_byteena_b" = "1"
-    Info (12134): Parameter "width_eccstatus" = "3"
-    Info (12134): Parameter "widthad_a" = "12"
-    Info (12134): Parameter "widthad_b" = "1"
-    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
-    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
-    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1c24.tdf
-    Info (12023): Found entity 1: altsyncram_1c24 File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_1c24" for hierarchy "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated" File: e:/programfiles/intelfpga_lite/21.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "BIP_CORE" for hierarchy "BIP_CORE:U_CORE" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 102
-Warning (10036): Verilog HDL or VHDL warning at BIP_CORE.vhd(29): object "w_en_ram" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 29
-Warning (10036): Verilog HDL or VHDL warning at BIP_CORE.vhd(30): object "w_wr_ram" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 30
-Warning (10036): Verilog HDL or VHDL warning at BIP_CORE.vhd(31): object "w_en_rom" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 31
-Info (12128): Elaborating entity "CAMINHO_CONTROLE" for hierarchy "BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 73
-Info (12128): Elaborating entity "ADDRESS_COUNTER" for hierarchy "BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|ADDRESS_COUNTER:add_counter" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd Line: 50
-Warning (10492): VHDL Process Statement warning at ADDRESS_COUNTER.vhd(24): signal "i_rst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at ADDRESS_COUNTER.vhd(26): signal "i_en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/Address_Counter/ADDRESS_COUNTER.vhd Line: 26
-Info (12128): Elaborating entity "LOGICA_CONTROLE" for hierarchy "BIP_CORE:U_CORE|CAMINHO_CONTROLE:cam_controle|LOGICA_CONTROLE:log_controle" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Controle/CAMINHO_CONTROLE.vhd Line: 57
-Info (12128): Elaborating entity "CAMINHO_DADOS" for hierarchy "BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/BIP_CORE.vhd Line: 88
-Info (12128): Elaborating entity "ALU" for hierarchy "BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ALU:uni_logica_arit" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd Line: 121
-Info (12128): Elaborating entity "ACC" for hierarchy "BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|ACC:acumulador" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd Line: 130
-Info (12128): Elaborating entity "INSTRUCTION_REGISTER" for hierarchy "BIP_CORE:U_CORE|CAMINHO_DADOS:cam_dados|INSTRUCTION_REGISTER:registrador_instrucao" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP_CORE/Caminho_Dados/CAMINHO_DADOS.vhd Line: 140
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[0]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 36
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[1]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 58
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[2]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 80
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[3]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 102
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[4]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 124
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[5]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 146
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[6]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 168
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[7]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 190
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[8]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 212
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[9]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 234
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[10]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 256
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[11]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 278
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[12]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 300
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[13]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 322
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[14]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 344
-        Warning (14320): Synthesized away node "ROM:U_ROM|ROM_INTEL_SREG:\intel:U01|altsyncram:altsyncram_component|altsyncram_1c24:auto_generated|q_a[15]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_1c24.tdf Line: 366
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[0]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 39
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[1]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 62
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[2]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 85
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[3]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 108
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[4]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 131
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[5]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 154
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[6]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 177
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[7]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 200
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[8]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 223
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[9]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 246
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[10]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 269
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[11]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 292
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[12]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 315
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[13]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 338
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[14]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 361
-        Warning (14320): Synthesized away node "RAM:U_RAM|MEMORIA_INTEL:\intel:U01|altsyncram:altsyncram_component|altsyncram_74q3:auto_generated|q_a[15]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/db/altsyncram_74q3.tdf Line: 384
-Info (17049): 28 registers lost all their fanouts during netlist optimizations.
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 14 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_clk" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 12
-    Warning (15610): No output dependent on input pin "i_switches[0]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[1]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[2]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[3]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[4]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[5]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[6]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[7]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[8]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[9]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[10]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_switches[11]" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 13
-    Warning (15610): No output dependent on input pin "i_rst" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 15
-Info (21057): Implemented 14 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 14 input pins
-    Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Wed Jul 27 10:30:59 2022
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:55
+Warning (10036): Verilog HDL or VHDL warning at BIP.vhd(33): object "w_switches" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 33
+Warning (10036): Verilog HDL or VHDL warning at BIP.vhd(36): object "w_out_acc" assigned a value but never read File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 36
+Info (12128): Elaborating entity "RAM" for hierarchy "RAM:U_RAM" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 113
+Error (10818): Can't infer register for "o_data[0]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[1]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[2]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[3]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[4]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[5]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[6]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[7]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[8]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[9]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[10]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[11]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[12]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[13]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[14]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "o_data[15]" at RAM.vhd(116) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 116
+Error (10818): Can't infer register for "w_memoria_ram[0][0]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][0]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (10818): Can't infer register for "w_memoria_ram[0][1]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][1]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (10818): Can't infer register for "w_memoria_ram[0][2]" at RAM.vhd(114) because it does not hold its value outside the clock edge File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Info (10041): Inferred latch for "w_memoria_ram[0][2]" at RAM.vhd(114) File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/RAM/RAM.vhd Line: 114
+Error (12152): Can't elaborate user hierarchy "RAM:U_RAM" File: E:/Projetos/UFSC/Aulas/Linguagem_E_Descricao_De_Hardware/BIP/BIP.vhd Line: 113
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 3 warnings
+    Error: Peak virtual memory: 4852 megabytes
+    Error: Processing ended: Thu Jul 28 12:05:50 2022
+    Error: Elapsed time: 00:00:28
+    Error: Total CPU time (on all processors): 00:01:01
 
 

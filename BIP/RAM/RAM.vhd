@@ -38,7 +38,7 @@ end RAM;
 
 architecture Behavioral of RAM is
 	type mem_type is array(0 to p_add_width*p_add_width-1) of std_logic_vector(i_data'range);
-	signal w_memoria_ram : mem_type; -- := (others => (others => '0'));
+	signal w_memoria_ram : mem_type:= (others => (others => '0'));
 	signal w_address 	: std_logic_vector(p_add_width-1 downto 0):= (others => '0');
 	signal w_address_num 	: unsigned(p_add_width-1 downto 0);
 	
